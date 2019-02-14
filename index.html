@@ -1,1 +1,431 @@
-Hello World
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
+    <title>EmotionalArcMovie</title>
+    <link rel="shortcut icon" href="/static/base/images/sentiment_logo.png">
+    <link rel="stylesheet" href="/static/base/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/base/css/bootstrap-movie.css">
+    <link rel="stylesheet" href="/static/base/css/animate.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" type="text/css"
+          rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="/static/mood/range.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.js"></script>
+    <script type="text/javascript" src="/static/mood/range.js"></script>
+
+    <style>
+        .navbar-brand > img {
+            display: inline;
+        }
+
+        .media {
+            padding: 3px;
+            border: 1px solid #ccc
+        }
+    </style>
+
+<link href='https://fonts.googleapis.com/css?family=Josefin+Sans|Audiowide|Berkshire+Swash|Cabin+Sketch|Raleway:400,700'
+      rel='stylesheet' type='text/css'/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="/static/base/css/LionCoders.css">
+
+
+</head>
+
+<body style="margin-top:76px;background-color:#4d4d4d !important;height:10%">
+<!--导航-->
+<nav class="navbar navbar-default navbar-fixed-top" style="background-color:#4d4d4d !important;height:10%">
+    <div class="container">
+        <!--小屏幕导航按钮和logo-->
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand" style="width:400px;color:#faf8e9">
+                <img src="/static/base/images/sentiment_logo.png" style="height:40px;">&nbsp;EmotionalArcMovie
+            </a>
+        </div>
+        <!--小屏幕导航按钮和logo-->
+        <!--导航-->
+        <div class="navbar-collapse collapse">
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a style="background-color: #4d4d4d !important;color:#faf8e9" class="curlink"
+                       href="/"> <span class="glyphicon glyphicon-film"></span>&nbsp;Movie</a>
+                </li>
+                <li>
+                    <a style="background-color: #4d4d4d !important;color:#faf8e9" class="curlink"
+                       href="/login/"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login</a>
+                </li>
+                <li>
+                    <a style="background-color: #4d4d4d !important;color:#faf8e9" class="curlink"
+                       href="/regist/"><span
+                            class="glyphicon glyphicon-plus"></span>&nbsp;Register</a>
+                </li>
+                <li>
+                    <a style="background-color: #4d4d4d !important;color:#faf8e9" class="curlink"
+                       href="/logout/"><span
+                            class="glyphicon glyphicon-log-out"></span>&nbsp;Logout</a>
+                </li>
+                <li>
+                    <a style="background-color: #4d4d4d !important;color:#faf8e9" class="curlink"
+                       href="/user/"><span class="glyphicon glyphicon-user"></span> Account</a>
+                </li>
+                <li>
+                    <a style="background-color: #4d4d4d !important;color:#faf8e9" data-toggle="collapse"
+                       href="#multiCollapseExample1"><span class="glyphicon  glyphicon-th-list"></span> About</a>
+                    <ul style="background-color: #4d4d4d !important;color:#faf8e9;" class="collapse multi-collapse"
+                        id="multiCollapseExample1">
+                        <li><a target='_blank' href="/EmotionalArcMovie"> <strong>The Project</strong></a>
+                        </li>
+                        <li><a target='_blank' href="/DylanaWang"><strong>The
+                            Contributor</strong></a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+
+        </div>
+    </div>
+    <!--导航-->
+
+    </div>
+</nav>
+<!--导航-->
+<!--内容-->
+<div class="container" style="height:100%;width:100%;">
+
+<div id="music">
+    <audio controls autoplay="autoplay" style="width:200px;height:50px">
+        <source src="https://s3-us-west-1.amazonaws.com/emotionalarcmovie/static/video/backgroud.mp3"
+                type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</div>
+<div class="first row">
+    <div class="col-md-4 name-block-container reverse">
+        <h1><span>Hi, I'm</span>
+            Dylana (Yangyang) Wang</h1>
+        <h2>Data Scientist</h2>
+
+        <a class="btn btn-download"
+           href="https://drive.google.com/uc?export=download&id=15xFivcC6fDOnEhxaOT_DQuXlwWV9Pmg2"
+           download="Dylana_Wang_Resume">Download
+            Resume</a>
+        <a class="btn btn-online"
+           href="https://drive.google.com/file/d/15xFivcC6fDOnEhxaOT_DQuXlwWV9Pmg2/view?usp=sharing"
+           target="_blank">View Resume Online</a>
+        <div class="social">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/dylana-wang-971982163/"
+                       target="_blank"><i
+                        class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.facebook.com/wangyangtot" target="_blank"><i
+                        class="fa fa-facebook"></i></a></li>
+                <li><a href="https://github.com/wangyangtot" target="_blank"><i
+                        class="fa fa-github"></i></a>
+            </ul>
+
+        </div>
+    </div>
+    <div class="col-md-12 content-blocks about showx">
+        <div class="row content">
+            <div class="col-md-8">
+                <h3 class="block-title">Profile</h3>
+                <p> &nbsp &nbsp &nbsp &nbsp I am currently a Ph.D. candidate in Computational Chemistry, and I already
+                    got
+                    the Master of
+                    Science in Physical Chemistry from UCR. What's more, I am a programmer, with an
+                    analytical and mathematical bent. Armed with the <a
+                            href="https://www.mindsetworks.com/science/" target="_blank">growth mindset</a> which coined
+                    by
+                    psychologist Carol Dweck,I am a<a
+                            href="http://psycnet.apa.org/buy/2000-08364-006" target="_blank"> high
+                        self-monitor</a> with huge curiocity for new technologies.</p>
+                <p> &nbsp &nbsp&nbsp &nbsp On the strength of my academic performance at the
+                    graduate level, I have substantially relevant work experience with data and coding spanning
+                    over three years.Considerable spadework I have been undertaking have paved me the way for
+                    entering
+                    the industry. </p>
+                <p> &nbsp &nbsp&nbsp &nbsp I am seeking opportunaties to data science or machine learing
+                    engineering position in industry to work outside my comfort zone.</p>
+            </div>
+            <div class="col-md-4">
+                <ul class="info-list">
+                    <li><strong>Name : </strong> Dylana (Yangyang) Wang</li>
+                    <li><strong>Address : </strong> Riverside, CA</li>
+                    <li><strong>Email : </strong> wangyangtot@gmail.com</li>
+                    <li><strong>Phone : </strong> +1-951-801-1451</li>
+                    <li><strong>Interest : </strong> Full-Time Data Scientist</li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="block-content ">
+            <h3 class="block-title">Skills</h3>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h4>Technical Skills</h4>
+                    <label class="progress-bar-label"> Python - <span>Advanced</label>
+                    <div class="progress">
+                        <div style="width: 80%;" class="progress-bar" role="progressbar" aria-valuenow="85"
+                             aria-valuemin="0" aria-valuemax="100">
+                            <span> 80%</span>
+                        </div>
+                    </div>
+
+                    <label class="progress-bar-label">C++/C - <span>Intermediate</span></label>
+                    <div class="progress">
+                        <div style="width: 67%;" class="progress-bar" role="progressbar" aria-valuenow="67"
+                             aria-valuemin="0" aria-valuemax="100">
+                            <span>67%</span>
+                        </div>
+                    </div>
+                    <label class="progress-bar-label"> Java - <span>Intermediate</label>
+                    <div class="progress">
+                        <div style="width: 62%;" class="progress-bar" role="progressbar" aria-valuenow="69"
+                             aria-valuemin="0" aria-valuemax="100">
+                            <span>60%</span>
+                        </div>
+                    </div>
+                    <label class="progress-bar-label"> Javascript - <span>Intermediate</label>
+                    <div class="progress">
+                        <div style="width: 50%;" class="progress-bar" role="progressbar" aria-valuenow="69"
+                             aria-valuemin="0" aria-valuemax="100">
+                            <span>50%</span>
+                        </div>
+                    </div>
+                    <label class="progress-bar-label">HTML&amp;CSS - <span>Intermediate</span></label>
+                    <div class="progress">
+                        <div style="width: 70%;" class="progress-bar" role="progressbar" aria-valuenow="99"
+                             aria-valuemin="0" aria-valuemax="100">
+                            <span>70%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h4>Know-how</h4>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <ul class="icon-list">
+                                <li>Machine Learning</li>
+                                <li>Data analysis</li>
+                                <li>Deep Learning</li>
+                                <li>Web Development</li>
+                                <li>Object-Oriented Design</li>
+                                <li>Relational Database (e.g. MySQL)</li>
+
+                                <li>NoSQL Database (e.g. MongoDB)</li>
+
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul class="icon-list">
+                                <li>Data Structure and Algorithm</li>
+                                <li>hadoop</li>
+                                <li>D3</li>
+
+
+                                <li>Bootstrap</li>
+                                <li>DOM Manipulation</li>
+                                <li>JQuery</li>
+                                <li>AWS</li>
+                                <li> LaTeX</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block-content ">
+            <h3 class="block-title">Projects</h3>
+            <div class="timeline experience">
+
+                <div class="row ">
+                    <div class="col-md-12">
+                        <div class="exp-holder">
+                            <div class="exp">
+                                <div class="hgroup">
+                                    <h4> EmotionalArcMovie </h4>
+                                    <h5>An interactive Movie Search and Recommendation Engine</h5>
+                                </div>
+                                <ul>
+                                    <li>Build an interactive movie recommendation system that supports discovery of
+                                        unknown movies with desired sentiment arc to go beyond the static ranked list
+                                        paradigm.
+                                    </li>
+                                    <li> Developed a web app as final product,offering registered user movies based on
+                                        <strong>matrix factorization</strong>method and unregistered users with
+                                        <strong>contentbased similarities collaborative filtering</strong> method.
+                                    </li>
+                                    <li> Scraped movie scripts from SpringfieldSpringfiled and Used <strong>Lexicon-Based
+                                        Methods</strong> of <strong>Sentiment Analysis</strong> to analyze scripts of
+                                        9000 movies and
+                                        Applied <strong>t-SNE algorithm</strong> to reduce dimensionality of each script
+                                        for
+                                        visualization.
+                                    </li>
+                                    <li> Designed an interactive web page utilizing<strong> AJAX technology </strong>(HTML,
+                                        CSS and JavaScript);
+                                    </li>
+                                    <li><strong>Technologies
+                                        used:Flask,Scikit-learn,mySQL,HTML,Boostrap,D3,TuriCreate,Pandas,Numpy,jQuery,
+                                        Ajax</strong>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="exp">
+                                <div class="hgroup">
+                                    <h4>Home Credit Default Risk:</h4>
+                                    <h5>Kaggle Compitition</h5>
+                                </div>
+                                <ul>
+                                    <li> Made use of 2.89 GB data from kaggle which includes a variety of
+                                        data--including
+                                        telco and transactional information to predict bank clients' repayment
+                                        abilities.
+                                    </LI>
+                                    <li> Conducted <strong>feature engineering</strong> by applying min, max, mean, sum
+                                        and
+                                        var functions to create features and used feature selection by
+                                        <strong>tree-based feature selection</strong>,reducing the number of features
+                                        from 1000 to
+                                        400.
+                                    </LI>
+                                    <li> Implemenend <strong>logistic regression, XGBoost, CatBoost, LightGBM with
+                                        Stratified KFold methods</strong> as base models and evaluated model performance
+                                        with
+                                        <strong>operating characteristic curve(ROC)</strong>.
+                                    </li>
+                                    <li> Made <strong>second-level stackers</strong> from base models and submit the one
+                                        with
+                                        least Roc of 0.793, Ranking <strong>top 19%</strong> in the competition.
+
+                                    </LI>
+                                    <li><strong> Technologies used:
+                                        Scikit-learn,Pandas,Numpy,Matplotlib,Seaborn</strong>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="exp">
+                                <div class="hgroup">
+                                    <h4>House Price Prediction:</h4>
+                                    <h5>kaggle Data</h5>
+                                </div>
+                                <ul>
+                                    <li> Developed and implemented <strong>Repeat Sale Method</strong> to calculate the
+                                        Real
+                                        Estate Price Index and Used <strong>GARCH model of Time Series</strong> to
+                                        predict the
+                                        Real Estate Price Index.
+                                    </li>
+                                    <li> Preprocessed data set by data cleaning,categorical feature
+                                        transformation, normalization and feature selection. etc.
+                                    </li>
+                                    <li> Used <strong>ensemble methods including Random Forest and Gradient Boosting
+                                    </strong>and evaluated model performance via <strong>Cross-Validation(K-fold)
+                                        technique</strong>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="block-content">
+            <h3 class="block-title">Education</h3>
+            <div class="timeline education">
+                <div class="row ">
+                    <div class="col-md-12">
+                        <div class="exp-holder">
+                            <div class="exp edu">
+                                <div class="hgroup">
+                                    <h4>Ph.D. in Computational Chemistry - UCR </h4>
+                                    <h5>Sept 2015 - <span class="current">Current (on hold, in progress)</span> ;</h5>
+                                </div>
+                            </div>
+                            <div class="exp edu">
+                                <div class="hgroup">
+                                    <h4>Master of Science in Physical Chemistry - UCR</h4>
+                                    <h5>Sept 2015 - July 2017;</h5>
+                                </div>
+                            </div>
+                            <div class="exp edu">
+                                <div class="hgroup">
+                                    <h4>Bachelor of Science in Chemistry- University of Science and
+                                        Technology of China</h4>
+                                    <h5>Sept 2011 - July 2015;</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block-content">
+            <h3 class="block-title">Certifications</h3>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-sm-6 awards">
+                        <img src="/static/pig/machine-learning.png" alt=""/>
+                    </div>
+                    <div class="col-sm-6 awards">
+                        <img src="/static/pig/foundation%20of%20machine%20learning.png" alt=""/>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 awards">
+                    <img src="/static/pig/Algorithms.png" alt=""/>
+                </div>
+                <div class="col-sm-6 awards">
+                    <img src="/static/pig/deep-learning.png" alt=""/>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-12 btn-email">
+                <a class="btn lowercase" href="mailto:wangyangtot@gmail.com?subject=Website Feedback">wangyangtot@gmail.com</a><br/>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+</div>
+<!--内容-->
+<script src="/static/base/js/bootstrap.min.js"></script>
+<script src="/static/base/js/jquery.singlePageNav.min.js"></script>
+<script src="/static/base/js/wow.min.js"></script>
+<script src="/static/lazyload/jquery.lazyload.min.js"></script>
+
+<script>
+    $(function () {
+        new WOW().init();
+    })
+
+</script>
+<script src="http://cdn.bootcss.com/holder/2.9.4/holder.min.js"></script>
+
+
+</body>
+</html>
