@@ -340,7 +340,7 @@ strong, small {
     height: 100%;
     position: absolute;
     overflow: hidden;
-    background: url(../images/bg.jpg) white 10% 10%;
+    background: url(../../images/background.jpg) white 10% 10%;
     background-size: cover;
 }
 
