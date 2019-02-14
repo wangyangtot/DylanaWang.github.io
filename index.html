@@ -1,379 +1,716 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <!-- Standard Meta -->
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <!-- Site Properties -->
-    <title>Dylana (Yangyang) Wang's Homepage</title>
-    <script src="jquery-3.2.1.min.js"></script>
-    <script src="semantic/dist/semantic.js"></script>
-    <link rel="stylesheet" href="semantic/dist/semantic.css">
-    <script src="semantic/dist/components/accordion.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHL28TFnTnKeo1I1WMVc9zQHch9ZCABVs&sensor=false"></script>
-    <link rel="stylesheet" type="text/css" href="semantic/dist/components/accordion.css">
-    <link rel="stylesheet" type="text/css" href="semantic/dist/components/reset.css">
-    <link rel="stylesheet" type="text/css" href="semantic/dist/components/site.css">
-    <link rel="stylesheet" type="text/css" href="semantic/dist/components/container.css">
-    <link rel="stylesheet" type="text/css" href="semantic/dist/components/grid.css">
-    <link rel="stylesheet" type="text/css" href="semantic/dist/components/header.css">
-    <link rel="stylesheet" type="text/css" href="semantic/dist/components/image.css">
-    <link rel="stylesheet" type="text/css" href="semantic/dist/components/menu.css">
-    <link rel="stylesheet" type="text/css" href="semantic/dist/components/divider.css">
-    <link rel="stylesheet" type="text/css" href="semantic/dist/components/list.css">
-    <link rel="stylesheet" type="text/css" href="semantic/dist/components/segment.css">
-    <link rel="stylesheet" type="text/css" href="semantic/dist/components/dropdown.css">
-    <link rel="stylesheet" type="text/css" href="semantic/dist/components/icon.css">
-    <link rel="shortcut icon" type="image/x-icon" href="images/icon.png"/>
-    <style type="text/css">
-        body {
-            height: fit-content;
-            width: 100%;
-        }
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110963260-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
 
-        p {
-            font-size: medium;
-        }
+	  gtag('config', 'UA-110963260-1');
+	</script>
 
-        .parallax {
-            /* The image used */
-            background-image: url("images/background.jpg");
-            /* Full height */
-            height: fit-content;
-            width: 100%;
-            /* Create the parallax scrolling effect */
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding: 20px;
-        }
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        .ui.menu .item img.logo {
-            margin-right: 1.5em;
-        }
+	<title>Welcome to Chloe's Site</title>
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<link rel="icon" href="http://demo.lion-coders.com/hello/hello-dark/images/favicon.ico"/>
+	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans|Audiowide|Berkshire+Swash|Cabin+Sketch|Raleway:400,700' rel='stylesheet' type='text/css'/>
+	<link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css" media="screen"/>
+	<link rel="stylesheet" href="static/css/font-awesome.min.css" type="text/css" media="screen"/>
+	<link rel="stylesheet" href="static/css/animate.css" type="text/css" media="screen"/>
+	<link rel="stylesheet" href="static/css/style.css" type="text/css" media="screen"/>
 
-        .ui.hidden.segment {
-            background: rgba(255, 255, 255, 0.5);
-            margin-left: 20%;
-            margin-right: 20%;
-        }
-
-        @media only screen and (max-device-width: 1024px) {
-            .parallax {
-                background-attachment: scroll;
-            }
-
-            .ui.hidden.segment {
-                background: rgba(255, 255, 255, 0.5);
-                margin-left: 0px;
-                margin-right: 0px;
-            }
-        }
-
-    </style>
 </head>
-
-<script>
-    $(document).ready(function () {
-        $('.ui.accordion').accordion();
-    });
-
-</script>
-
 <body>
-<!--<div class="ui fluid seven item menu">-->
-<div class="parallax" style="padding: 0px;">
-    <div class="ui fluid stackable huge seven item menu" style="background: rgba(255, 255, 255, 0.7)">
-        <div class="ui container">
-            <a href="#" class="header item">
-                Dylana Wang
-            </a>
-            <a href="#biography" class="item">Biography</a>
-            <a href="#education" class="item">Education</a>
-            <a href="#experiences" class="item">Experiences</a>
-            <a href="#publications" class="item">Publications</a>
-            <a href="#projects" class="item">Projects</a>
-            <a href="#honors" class="item">Honors</a>
-        </div>
-    </div>
-</div>
-<div class="parallax">
-    <div id="biography" class="ui hidden segment">
-        <h1 class="ui huge header">Dylana (Yangyang) Wang
-            <div class="sub header">Ph.D @UC Riverside, Chemistry department.
-            </div>
-        </h1>
-        <div class="ui two column stackable grid container">
-            <div class="nine wide column" style="padding-left: 0px">
-                <h3 class="ui header"> Interests: </h3>
-                <p>Machine Learning / Data Mining /
-                    <br>Data Visualization / Computer Vision</p>
-                <p>
-                    <a href="https://github.com/wangyangtot" target="_blank"><i class="black github icon large"></i></a>
-                    <a href="https://www.linkedin.com/in/dylana-wang-971982163" target="_blank"><i
-                            class="linkedin black icon large"></i></a>
-                    <a href="https://www.facebook.com/wangyangtot" target="_blank"><i
-                            class="facebook black icon large"></i></a>
-                </p>
-                <p>
-                    <a href="DylanaWang_DataScientist.pdf" , target="_blank">
-                        <button class="ui basic black right labeled icon button">
-                            <i class="arrow circle down icon"></i> Download CV
-                        </button>
-                    </a>
-                </p>
-                <p><i class="marker icon"></i> Riverside, CA</p>
-                <p><i class="student icon"></i> UC Riverside</p>
-                <p><i class="mail icon"></i> <a href="mailto:wangyangtot@gmail.com">wangyangtot@gmail.com</a></p>
-            </div>
-            <div class="seven wide column">
-                <!--<div id="googleMap" style="width: 100%;height: 100%;"></div>-->
-                <img class="ui fluid rounded image" src="images/selfile.jpg"/>
-                <!--<label> Photo at Fudan University by
-                    <a href="https://mengxiaolin.me/" target="_blank"> Mengxiao Lin </a> </label>-->
-            </div>
-        </div>
-        <h3 class="ui header"> Biography: </h3>
-        <p> I skipped two years in my primary and middle school. When I was 16 years old, I was admitted to
-            <a href="http://www.fudan.edu.cn" target="_blank">Fudan University</a>, majoring in Computer Science. I
-            joined
-            <a href="http://www.datascience.fudan.edu.cn" target="_blank"> Shanghai Key Laboratory of Data Science</a>
-            in my sophomore year and was supervised by
-            <a href="http://datascience.fudan.edu.cn/en/list.aspx?TypeID=9&ID=51" target="_blank">Prof. Yun Xiong</a>
-            when I was doing research about data mining of P2P data. I also spent a wonderful summer in
-            <a href="http://www.nd.edu/" target="_blank">University of Notre Dame</a> under the supervision of
-            <a href="http://sites.nd.edu/chaoli-wang/" target="_blank"> Prof. Chaoli Wang</a>, doing a data
-            visualization project focused on ant movement data. My undergraduate thesis focuses on graph
-            embedding(network representation learning) on P2P dataset and I'm co-advised by
-            <a href="http://www.cs.ucla.edu/~weiwang" target="_blank">Prof. Wei Wang(UCLA)</a> and
-            <a href="http://datascience.fudan.edu.cn/en/list.aspx?TypeID=9&ID=51" target="_blank">Prof. Yun Xiong</a>.
-        </p>
-        <p>I have several intern experiences. They spread from trading strategy developer(also known as "quant") to
-            predictive analysis intern. They seem quite different at first glance but they all require the knowledge of
-            dealing with data. I also took part in some hackathons and software development competitions, from which I
-            realized building real-world applications are challenging and fun. It's after these valuable experiences
-            that I found what I'm really interested in. </p>
-        <p>I'm seeking my master degree in Computer Science at UC Berkeley. I would like to spend my rest of life to
-            make changes to the world and make it a better place.</p>
-    </div>
-</div>
-<div class="parallax">
-    <div id="education" class="ui hidden segment">
-        <h2 class="ui header">Education</h2>
-        <h3 class="ui header"> Timeline: </h3>
-        <ul class="text">
-            <p class="list"><i class="circle thin icon"></i> Aug 2018 - Present |
-                <a href="https://eecs.berkeley.edu/" target="_blank">EECS M.Eng </a>, <strong>UC Berkeley</strong></p>
-            <p class="list"><i class="circle thin icon"></i> Sep 2014 - Jun 2018 | Bachelor's Degree,
-                <a href="http://www.cs.fudan.edu.cn/" target="_blank"> Computer Science </a>, <strong>Fudan
-                    University</strong></p>
-            <p class="list"><i class="circle thin icon"></i> Sep 2015 - Jun 2018 | Minor in
-                <a href="http://www.econ.fudan.edu.cn/" target="_blank"> Economics </a>, <strong>Fudan
-                    University</strong></p>
-            <p class="list"><i class="circle thin icon"></i> Jul 2017 - Sep 2017 | iSURE Program ,
-                <a href="https://cse.nd.edu/" target="_blank">Computer Science </a>, <strong>University of Notre
-                    Dame</strong></p>
-        </ul>
-        <h3 class="ui header">Courses Taken in UC Berkeley: </h3>
-        <ul class="text">
-            <p class="list"><i class="circle thin icon"></i> COMPSCI C200A | <a
-                    href="http://www.ds100.org/fa18/"> Principles and Techniques of Data Science</a></p>
-            <p class="list"><i class="circle thin icon"></i> COMPSCI 294-112 | <a
-                    href="http://rail.eecs.berkeley.edu/deeprlcourse/"> Deep Reinforcement Learning</a></p>
-        </ul>
-        <div class="ui basic accordion">
-            <div class="title">
-                <p><i class="dropdown icon"></i> <strong>Click here to view all courses taken in Fudan
-                    University.</strong></p>
-            </div>
-            <div class="content">
-                <ul>
-                    <p class="list"><i class="circle thin icon"></i> COMP120006 | Programming</p>
-                    <p class="list"><i class="circle thin icon"></i> COMP120008 | C++ Programming</p>
-                    <p class="list"><i class="circle thin icon"></i> COMP130004 | Data Structure</p>
-                    <p class="list"><i class="circle thin icon"></i> COMP130010 | Introduction to Database Systems</p>
-                    <p class="list"><i class="circle thin icon"></i> COMP130011 | Algorithm Design and Analysis</p>
-                    <p class="list"><i class="circle thin icon"></i> COMP130015 | Software Engineering</p>
-                    <p class="list"><i class="circle thin icon"></i> COMP130017 | Data Communication and Computer
-                        Network</p>
-                    <p class="list"><i class="circle thin icon"></i> COMP130066 | Introduction to Information Security
-                    </p>
-                    <p class="list"><i class="circle thin icon"></i> COMP130067 | Computer Theory and System</p>
-                    <p class="list"><i class="circle thin icon"></i> SOFT130068 | Management Information Systems</p>
-                    <p class="list"><i class="circle thin icon"></i> DATA130007 | Social Network Mining</p>
-                    <p class="list"><i class="circle thin icon"></i> DATA130008 | Introduction to Artificial
-                        Intelligence</p>
-                    <p class="list"><i class="circle thin icon"></i> COMP130110 | Operating Systems</p>
-                    <p class="list"><i class="circle thin icon"></i> COMP130071 | Network Attacks and Countermeasures
-                    </p>
-                    <p class="list"><i class="circle thin icon"></i> COMP130133 | Information System Analysis and Design
-                    </p>
-                    <p class="list"><i class="circle thin icon"></i> COMP130069 | Introduction to Cryptography </p>
-                    <p class="list"><i class="circle thin icon"></i> MATH120016 | Mathematical Analysis</p>
-                    <p class="list"><i class="circle thin icon"></i> COMP120004 | Linear Algebra</p>
-                    <p class="list"><i class="circle thin icon"></i> COMP120005 | Set Theory and Graph Theory</p>
-                    <p class="list"><i class="circle thin icon"></i> COMP130006 | Probability Theory and Mathematical
-                        Statistics</p>
-                    <p class="list"><i class="circle thin icon"></i> COMP130131 | Operations Research</p>
-                </ul>
-            </div>
-        </div>
-        <p>I also take online courses on Coursera and Youtube.</p>
-        <ul class="text">
-            <p class="list"><i class="circle thin icon"></i> Stanford University | <a
-                    href="https://www.coursera.org/learn/machine-learning/home/welcome"> Machine Learning</a></p>
-            <p class="list"><i class="circle thin icon"></i> deeplearning.ai | <a
-                    href="https://www.coursera.org/learn/neural-networks-deep-learning/home/welcome"> Neural Networks
-                and Deep Learning</a></p>
-            <p class="list"><i class="circle thin icon"></i> Stanford University | <a
-                    href="https://www.youtube.com/playlist?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv"> Convolutional
-                Neural Networks for Visual Recognition</a> (in progress)</p>
-        </ul>
-        <h3 class="ui header">Skills:</h3>
-        <ul class="text">
-            <p class="list"><i class="circle thin icon"></i> <strong>Programming Languages:</strong> Proficient in
-                Python/C++/HTML/CSS/JavaScript, experienced in C/Java/R/Matlab </p>
-            <p class="list"><i class="circle thin icon"></i> <strong>Operating Systems:</strong> Windows / Unix </p>
-            <p class="list"><i class="circle thin icon"></i> <strong>Languages:</strong> Native in Mandarin Chinese,
-                fluent in English</p>
-        </ul>
-    </div>
-</div>
-<div class="parallax">
-    <div id="experiences" class="ui hidden segment">
-        <h2 class="ui header">Experiences</h2>
-        <h3 class="ui header">Research:</h3>
-        <ul class="text">
-            <!--TODO: to be extended-->
-            <p class="list"><i class="circle thin icon"></i> May 2016 - Jun 2018 | <strong>Research Assistant</strong> :&nbsp;Risk
-                Evaluation on P2P Platforms </p>
-            <p class="list"><i class="circle thin icon"></i> Jul 2017 - Jan 2018 | <strong>Research Assistant</strong> :&nbsp;Data
-                Visualization Project on Ant Trajectory </p>
-            <p class="list"><i class="circle thin icon"></i> May 2016 - Apr 2017 | <strong>Independent
-                Researcher</strong>:&nbsp; Image Matting: Soft Scissors Algorithm and Implementation </p>
-        </ul>
-        <h3 class="ui header">Intern:</h3>
-        <ul class="text">
-            <!--TODO: to be extended-->
-            <p class="list"><i class="circle thin icon"></i> Jan 2018 - Jul 2018 | <strong>Research Intern</strong>,
-                <a href="https://www.sensetime.com/?lang=en-us" target="_blank"> Sensetime(Beijing) </a></p>
-            <p class="list"><i class="circle thin icon"></i> Sep 2017 - Jan 2018 | <strong>Software Engineer
-                Intern</strong>,
-                <a href="https://www.sap.com/index.html" target="_blank"> SAP(Shanghai) </a></p>
-            <p class="list"><i class="circle thin icon"></i> Sep 2016 - Jun 2018 | <strong>Data Analyst Intern
-                (Remote)</strong>,
-                <a href="https://en.bbdservice.com/index" target="_blank"> BusinessBigData TECH </a></p>
-            <p class="list"><i class="circle thin icon"></i> Mar 2017 - Apr 2017 | <strong>Software Engineer
-                Intern</strong>,
-                <a href="http://meridianglobal.cn/main/init" target="_blank"> Meridian Global Inc. </a></p>
-            <p class="list"><i class="circle thin icon"></i> Jul 2016 - Dec 2016 | <strong>Software Engineer
-                Intern</strong>,
-                <a href="http://www.knquant.com/" target="_blank"> KN Capital </a></p>
-        </ul>
-    </div>
-</div>
-<div class="parallax">
-    <div id="publications" class="ui hidden segment">
-        <h2 class="ui header">Publications</h2>
-        <h3 class="ui header"> User Data Can Tell Defaulters in P2P Lending.</h3>
-        <p>Jackson J. Mi, <u><strong>Tianxiao Hu</strong></u> and Luke Deer, Conference on Data Science(ICDS'17)(Oral
-            Presentation) & Annals of Data Science(AODS), 2018. <a href="http://rdcu.be/GkQC" target="_blank"> view
-                online </a></p>
-        <p>Online peer-to-peer (P2P) lending service is a new type of financial platforms that enables individuals
-            borrow and lend money directly from one to another. In this paper, we analyzed the differences between
-            credit levels and users’ distribution of CPLP to evaluate if the credit levels can truly reflect the
-            borrowers’ credit. We used soft factors to establish a model that can ﬁnd borrowers who are likely to
-            default. Further, we proposed some strategies to construct and improve the risk-control of P2P lending
-            platforms.</p>
-    </div>
-    <div id="projects" class="ui hidden segment">
-        <h2 class="ui header">Projects</h2>
-        <!--TODO-->
-        <!--Kaggle-->
-        <!--Kinect Hackathon-->
-        <h3 class="ui header"> SmartGomoku: A web version of the Gomoku game with AI agents.</h3>
-        <p><a href="https://en.wikipedia.org/wiki/Gomoku" target="_blank">Gomoku</a>, also called Gobang or Five in a
-            Row. It's usually played on a Go board. Players alternate turns placing a stone of their color on an empty
-            intersection. The winner is the first player to form an unbroken chain of five stones horizontally,
-            vertically, or diagonally.</p>
-        <div class="ui two column stackable grid container">
-            <div class="twelve wide column">
-                <img class="ui fluid rounded image" src="images/gomoku_mac.png">
-            </div>
-            <div class="four wide column" style="padding-top: 40px">
-                <img class="ui fluid rounded image" src="images/gomoku_mobile.png">
-            </div>
-        </div>
-        <p>We developed a web app to play Gomoku. Users can access the web page by computer or mobile phone. We employed
-            <a href="https://weui.io/" target="_blank">weui</a> when designing the user interface. The algorithm of
-            agents and back end is completed using python and <a href="http://flask.pocoo.org/"
-                                                                 target="_blank">Flask</a> framework. </p>
-        <img class="ui small rounded bordered left floated image" src="images/gomoku_sample.gif">
-        <p>We implemented six AI agents. Users can select one agent and play Gomoku with it or let two AI agents play
-            with each other(see the demo left). The strategies of AI agents includes
-            <a href="https://en.wikipedia.org/wiki/Greedy_algorithm" target="_blank">greedy algorithm</a>,
-            <a href="https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning" target="_blank">alpha-beta pruning</a>
-            and
-            <a href="https://en.wikipedia.org/wiki/Monte_Carlo_tree_search" target="_blank">MCTS</a>. In this project we
-            also evaluated different evaluation functions and used <a href="http://numba.pydata.org/" target="_blank">numba</a>
-            package to accelerate the computing progress. To avoid losing advantages at the very beginning of the game,
-            we also taught our agents some formulas.</p>
-        <p> This is the final course project for <a href="http://www.sdspeople.fudan.edu.cn/zywei/DATA130008/"
-                                                    target="_blank">
-            Introduction of Artificial Intelligence</a> (DATA130008.01) @Fudan University. For further details, please
-            <a href="https://github.com/TianxiaoHu/GomokuAgent" target="_blank"> visit repo here<i
-                    class="github icon"></i></a>. </p>
-        <h3 class="ui header"> Glutton: a website for takeout foods. </h3>
-        <p>Glutton means someone that never stops eating. As you might guess, it's designed for takeout foods. For
-            users, they can create an account, manage profile, search for food and restaurant, place an order and view
-            order history. For restaurant-owners, they can publish their restaurant info, change menu and view
-            transaction history.</p>
-        <div class="ui two column stackable grid container">
-            <div class="eight wide column">
-                <img class="ui fluid rounded image" src="images/glutton-1.jpeg">
-            </div>
-            <div class="eight wide column">
-                <img class="ui fluid rounded image" src="images/glutton-2.jpeg">
-            </div>
-        </div>
-        <p></p>
-        <p>The front end is GitHub-like. For back end, <a href="http://flask.pocoo.org/" target="_blank">Flask</a> and
-            <a href="http://sqlite.org/" target="_blank"> SQLite </a>were employed for fast development. This is the
-            final course project for Introduction of Database Systems (COMP130010.03) @Fudan University. For further
-            details, please
-            <a href="https://github.com/TianxiaoHu/Glutton" target="_blank"> visit repo here<i class="github icon"></i></a>.
-        </p>
-    </div>
-</div>
-<div class="parallax">
-    <div id="honors" class="ui hidden segment">
-        <h2 class="ui header">Honors</h2>
-        <ul class="text">
-            <p class="list"><i class="circle thin icon"></i> May 2018| <strong>Outstanding Graduate of Fudan University
-                (10%)</strong></p>
-            <p class="list"><i class="circle thin icon"></i> May 2018| <strong>2nd Prize – Scholarship for Outstanding
-                Graduates (10%)</strong></p>
-            <p class="list"><i class="circle thin icon"></i> Oct 2017| <strong>Xiangqian Overseas Scholarship
-                (1%)</strong></p>
-            <p class="list"><i class="circle thin icon"></i> Oct 2017 & Oct 2016 & May 2016 | <strong>Excellent Academic
-                Performance Award (5%)</strong></p>
-            <p class="list"><i class="circle thin icon"></i> Sep 2017 & Sep 2015| <strong>2nd Prize – Scholarship for
-                Outstanding Students (10%)</strong></p>
-            <p class="list"><i class="circle thin icon"></i> Jun 2017 | <strong>Outstanding Leadership Award
-                (1%)</strong></p>
-            <p class="list"><i class="circle thin icon"></i> Apr 2017| <strong>1st Price - Application Developing
-                Competition of Tuju Cup (1%)</strong></p>
-            <p class="list"><i class="circle thin icon"></i> Oct 2016 | <strong>Joel & Ruth Spira Scholarship
-                (1%)</strong></p>
-            <p class="list"><i class="circle thin icon"></i> Sep 2016 | <strong>1st Prize – Scholarship for Outstanding
-                Students (5%)</strong></p>
-            <p class="list"><i class="circle thin icon"></i> Jun 2016 | <strong>Top 10 Students in School of Computer
-                Science, Fudan University (3%)</strong></p>
-        </ul>
-    </div>
-</div>
-</body>
 
+	<!-- <embed src="music/Sade_By_Your_Side.mp3" autostart="true" loop="true" height="0" width="0" margin = "0" padding = "0">   -->
+	<div class="music">
+		<embed src="music/Sade_By_Your_Side.mp3" autostart="true" loop="true">
+	</div>
+	<!-- <a src="https://open.spotify.com/user/spotify/playlist/37i9dQZF1DXc8kgYqQLMfH"></a> -->
+	<div class="preloader">
+			<div class="spinner"><strong>Loading...<i class="fa-li fa fa-spinner fa-spin"></i></strong></div>
+	</div>
+	<div class="preloader-left"></div>
+	<div class="preloader-right"></div>
+
+	<div class="inline-menu-container hidex">
+
+		<ul class="inline-menu">
+			<li class="about menu-item">Resume</li>
+			<li class="portfolio menu-item">Portfolio</li>
+			<li class="blog menu-item">Fun Tech News</li>
+			<li class="contact menu-item">Contact</li>
+			<li id="close">&times;</li>
+		</ul>
+
+	</div>
+
+<section class="home">
+            <div class="container">
+		<div class="name-block">
+			<div class="name-block-container">
+				<h1><span>Hi, I'm</span>Yiwei (Chloe) Liu</h1>
+                                                <h2>Software Developer</h2>
+				<a class="btn btn-download" href="/YiweiLiu_Resume.pdf" download="Yiwei_Liu_Resume" >Download Resume</a>
+				<a class = "btn btn-online" href="https://drive.google.com/file/d/1JpzRRl5kY8ZSrI8xAf0HlESrGT9PmN5M/view?usp=sharing"  target="_blank">View Resume Online</a>
+				<div class="social">
+					<ul >
+						<li><a href="https://www.linkedin.com/in/yiwei-chloe-liu-9529006b/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="https://www.facebook.com/chloe.liu.9047" target="_blank"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://github.com/chloeliu123" target="_blank"><i class="fa fa-github"></i></a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		<div class="menu-blocks">
+			<div class="about-block">
+				<div class="about-block-container">
+					<h2 class="about menu-item">Resume</h2>
+				</div>
+			</div>
+			<div class="portfolio-block">
+				<div class="portfolio-block-container">
+					<h2 class="portfolio menu-item">Portfolio</h2>
+				</div>
+			</div>
+			<div class="blog-block">
+				<div class="blog-block-container">
+					<h2 class="blog menu-item">Fun Tech News</h2>
+				</div>
+			</div>
+			<div class="contact-block">
+				<div class="contact-block-container">
+					<h2 class="contact menu-item">Contact</h2>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="content-blocks about hidex">
+
+			<section class="content" id="about">
+
+				<div class="block-content">
+					<h3 class="block-title">Profile</h3>
+					<div class="row">
+						<div class="col-md-7">
+							<p> &nbsp &nbsp &nbsp &nbsp I am a Ph.D. candidate in Economics, and I just got Master of Science in Applied Mathematics from UCR this summer (2017). I also have done multiple web development and mobile development projects.</p>
+							<p>  &nbsp &nbsp&nbsp &nbsp My education background has provided me a variety of technical skills and people skills which allow me to relate to all levels of management and work successfully with a diversity of personalities. </p>
+							<p>  &nbsp &nbsp&nbsp &nbsp I also enjoy being challenged and working on projects that require me to work outside my comfort zone and knowledge set, as continuing to learn new languages and development techniques are important to me and the success of any organization.</p>
+							<img class="sign" src="images/signature.png" alt="" />
+						</div>
+						<div class="col-md-5">
+							<ul class="info-list">
+								<li><strong>Name : </strong> Yiwei (Chloe) Liu</li>
+								<!-- <li><strong>Date of birth : </strong>   July, 1990 </li> -->
+								<li><strong>Address : </strong> Riverside, CA</li>
+								<li><strong>Email : </strong> yiwei.liu@email.ucr.edu</li>
+								<li><strong>Phone : </strong> +1-951-488-8066</li>
+								<!-- <li><strong>Skype : </strong>  James.Bond</li> -->
+								<li><strong>Interest : </strong> Full Time Software Engineer (Entry Level)</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-content ">
+					<h3 class="block-title">Skills</h3>
+					<div class="row">
+						<div class="col-sm-6">
+							<h4>Technical Skills</h4>
+							<label class="progress-bar-label"> Java  - <span>Advanced</label>
+							<div class="progress">
+								<div style="width: 85%;" class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+									<span> 85%</span>
+								</div>
+							</div>
+							<label class="progress-bar-label">HTML&amp;CSS - <span>Intermediate</span></label>
+							<div class="progress">
+								<div style="width: 70%;" class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100">
+									<span>70%</span>
+								</div>
+							</div>
+							<label class="progress-bar-label">Javascript - <span>Intermediate</span></label>
+							<div class="progress">
+								<div style="width: 67%;" class="progress-bar" role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100">
+									<span>60%</span>
+								</div>
+							</div>
+							<label class="progress-bar-label"> R  - <span>Intermediate</label>
+							<div class="progress">
+								<div style="width: 70%;" class="progress-bar" role="progressbar" aria-valuenow="69" aria-valuemin="0" aria-valuemax="100">
+									<span>70%</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<h4>Know-how</h4>
+							<div class="row">
+								<div class="col-sm-6">
+									<ul class="icon-list">
+										<li>Web Development</li>
+										<li>Object-Oriented Design</li>
+										<li>Distributed System Design</li>
+										<li>Relational Database (e.g. MySQL)</li>
+										<li>NoSQL Database (e.g. MongoDB)</li>
+										<li>AWS</li>
+									</ul>
+								</div>
+								<div class="col-sm-6">
+									<ul class="icon-list">
+										<li>Data Structure and Algorithm</li>
+										<li>Restful API Implementation</li>
+										<li>Bootstrap</li>
+										<li>DOM Manipulation</li>
+										<li>JQuery</li>
+										<li>Big Table</li>
+										<li>Big Query</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-content ">
+					<h3 class="block-title">Projects</h3>
+					<div class="timeline experience">
+
+						<div class="row ">
+							<div class="col-md-12">
+								<div class="exp-holder">
+									<div class="exp">
+										<div class="hgroup">
+											<h4>  Event+: </h4>
+											<h5>Java Web Service Development - Event Search and Recommendation Engine</h5>
+										</div>
+										<ul>
+											<li>-Developed a <strong>dynamic web page</strong> for users to search events and update preference;</li>
+											<li>-Improved<strong> personalized event recommendation</strong> based on search history and favorite records;</li>
+											<li>-Implemented <strong>RESTful APIs</strong> in Java using servlets to handle HTTP requests and responses;</li>
+											<li>-Built databases (both relational<strong> (MySQL) </strong>and<strong> NoSQL (MongoDB)) </strong>to fetch event data from TicketMaster API (This was also tested with Yelp API);</li>
+											<li>-Deployed server side to<strong> Amazon EC2 </strong>to handle 150 QPS tested by<strong> Apache JMeter</strong>;</li>
+											<li>Designed an interactive web page utilizing<strong> AJAX technology </strong>(HTML, CSS and JavaScript);</li>
+											<li>-Used<strong> ELK </strong>for user behavior analysis.</li>
+										</ul>
+										</div>
+
+									<div class="exp">
+										<div class="hgroup">
+											<h4>GoPlaces:</h4>
+											<h5>LBS based Android App</h5>
+										</div>
+										<ul>
+											<li>-Developed an <strong>Android App</strong> to post and search for events based on keywords;</li>
+											<li>-Integrated <strong>Google Map API</strong> to display and navigate to nearby events;</li>
+											<li>-Utilized <strong>Google Firebase</strong> to store and manage UGC data (comments, image, event descriptions, etc);</li>
+											<li>-Used in-app advertising <strong>Google AdMob</strong> to display ads from Google advertises in real time.</li>
+										</ul>
+									</div>
+
+									<div class="exp">
+										<div class="hgroup">
+											<h4>iGoPlaces:</h4>
+											<h5>Geo-index Based Social Network - iOS APP</h5>
+										</div>
+										<ul>
+											<li>-Developed a forum-like <strong>iOS App</strong> to post threads;</li>
+											<li>-Built a scalable web service with <strong>Golang</strong> to handle POST requests and deployed to Google Cloud (<strong>GAE Flex</strong>) for automatic scaling;</li>
+											<li>Created <strong>BigTable</strong> in Google Cloud for persistent storage of user information and posts;</li>
+											<li>Used <strong>Google Data-flow</strong> to dump daily user data from BigTable to <strong>BigQuery</strong> table for better performance of off-line analysis;</li>
+											<li>Aggregated the data in <strong>BigQuery</strong> at post level and user level for spam detection.</li>
+										</ul>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="block-content">
+					<h3 class="block-title">Education</h3>
+					<div class="timeline education">
+						<div class="row ">
+							<div class="col-md-12">
+								<div class="exp-holder">
+									<div class="exp edu">
+										<div class="hgroup">
+											<h4>Ph.D. in Economics - UCR </h4>
+											<h5>Sept 2012 - <span class="current">Current (on hold, in progress)</span> ;   GPA: 3.8;</h5>
+										</div>
+									</div>
+									<div class="exp edu">
+										<div class="hgroup">
+											<h4>Master of Science in Applied Mathematics - UCR </h4>
+											<h5>Sept 2014 - July 2017;   GPA : 3.7;</h5>
+										</div>
+									</div>
+									<div class="exp edu">
+										<div class="hgroup">
+											<h4>Master of Art in Economics - UCR</h4>
+											<h5>Sept 2012 - July 2014;   GPA : 3.8;</h5>
+										</div>
+									</div>
+									<div class="exp edu">
+										<div class="hgroup">
+											<h4>Bachelor of Science in Economics - Huazhong University of Science and Technology</h4>
+											<h5>Sept 2008 - July 2012;   GPA : 3.7;</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					 </div>
+				</div>
+<!--
+				<div class="block-content">
+					<h3 class="block-title">Services</h3>
+					<div class="row">
+						<div class="col-sm-4 service">
+							<div class="service-icon">
+								<i class=" fa fa-pencil"></i>
+							</div>
+							<h4>Web Design</h4>
+							<p>Ne cum invidunt constituto, sanctus accusam an usu, ea mandamus incorrupte mel. Pro cu purto graeco. Wisi sonet elitr eos in. </p>
+						</div>
+						<div class="col-sm-4 service">
+							<div class="service-icon">
+								<i class=" fa fa-building"></i>
+							</div>
+							<h4>App Development</h4>
+							<p>Ne cum invidunt constituto, sanctus accusam an usu, ea mandamus incorrupte mel. Pro cu purto graeco. Wisi sonet elitr eos in. </p>
+						</div>
+						<div class="col-sm-4 service">
+							<div class="service-icon">
+								<i class=" fa fa-image"></i>
+							</div>
+							<h4>Graphic Design</h4>
+							<p>Ne cum invidunt constituto, sanctus accusam an usu, ea mandamus incorrupte mel. Pro cu purto graeco. Wisi sonet elitr eos in. </p>
+						</div>
+						<div class="col-sm-4 service">
+							<div class="service-icon">
+								<i class=" fa fa-print"></i>
+							</div>
+							<h4>Print Design</h4>
+							<p>Ne cum invidunt constituto, sanctus accusam an usu, ea mandamus incorrupte mel. Pro cu purto graeco. Wisi sonet elitr eos in. </p>
+						</div>
+						<div class="col-sm-4 service">
+							<div class="service-icon">
+								<i class=" fa fa-image"></i>
+							</div>
+							<h4>Graphic Design</h4>
+							<p>Ne cum invidunt constituto, sanctus accusam an usu, ea mandamus incorrupte mel. Pro cu purto graeco. Wisi sonet elitr eos in. </p>
+						</div>
+						<div class="col-sm-4 service">
+							<div class="service-icon">
+								<i class=" fa fa-print"></i>
+							</div>
+							<h4>Print Design</h4>
+							<p>Ne cum invidunt constituto, sanctus accusam an usu, ea mandamus incorrupte mel. Pro cu purto graeco. Wisi sonet elitr eos in. </p>
+						</div>
+					</div>
+				</div>  -->
+
+				<div class="block-content">
+					<h3 class="block-title">Certifications</h3>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="col-sm-4 awards">
+								<img src="images/image1.jpg" alt="" /> SAS Base Programmer Certification
+							</div>
+							<div class="col-sm-4 awards">
+								<img src="images/image1.jpg" alt="" /> SAS Advanced Programmer Certification
+							</div>
+							<div class="col-sm-4 awards">
+								<img src="images/image2.jpg" alt="" /> SOA Exam P
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- 	<div class="block-content">
+					<h3 class="block-title">Testimonials</h3>
+					<div class="row">
+						<div class="col-md-12">
+							<ul class="testimonials">
+								<li>
+									<img src="images/testimonials/1.jpg" alt="">
+									<blockquote>This template is exactly what we were looking for!<p class="quote"><span>Brendon Rodgers</span> - CEO of xyz.com</p></blockquote>
+
+								</li>
+								<li>
+									<img src="images/testimonials/2.jpg" alt="">
+									<blockquote>This template is very nice! Great work<p class="quote"><span>Becky Allwood</span> - CEO of abc.com</p></blockquote>
+
+								</li>
+								<li>
+									<img src="images/testimonials/3.jpg" alt="">
+									<blockquote>My work has been significantly simplified.<p class="quote"><span>Elly Page</span> - CEO of nfl.com</p></blockquote>
+
+								</li>
+							</ul>
+						  </div>
+					</div> -->
+
+					<div class="row text-center">
+						<div class="col-md-12 btn-email">
+							<a class="btn lowercase" href="mailto:yiwei.liu@email.ucr.edu?subject=Website Feedback">yiwei.liu@email.ucr.edu</a><br/>
+							<small>I am available for freelance</small>
+						</div>
+					</div>
+				</div>
+
+
+			</section>
+		</div>
+
+		<div class="content-blocks portfolio hidex">
+
+			<section class="content">
+
+				<div class="block-content">
+					<h3 class="block-title">Portfolio</h3>
+					<div class="row">
+						<div class="col-md-12">
+							<ul id="filters">
+							  <li class="active" data-filter="*">All</li>
+							  <li data-filter=".graphic">Graphic</li>
+							  <li data-filter=".web">Web</li>
+							  <li data-filter=".video">Video</li>
+							  <li data-filter=".apps">Apps</li>
+							</ul>
+							<div id="projects">
+								 <!--  <div class="project graphic apps">
+									<a class="open-project" href="http://demo.lion-coders.com/hello/hello-dark/project-1.html">
+										<div class="project-overlay">
+											<div class="vcenter">
+												<div class="centrize">
+													<h4>Luxury Watch</h4>
+													<p>Graphic / Apps</p>
+												</div>
+											</div>
+										</div>
+									</a>
+									<img src="images/portfolio/1.jpg" alt="">
+								  </div> -->
+								  <div class="project web   apps">
+									<a  href="http://54.149.172.207/Titan/#"  target="_blank">
+										<div class="project-overlay">
+											<div class="vcenter">
+												<div class="centrize">
+													<h4>Event Recommendation</h4>
+													<p>Web / Apps</p>
+												</div>
+											</div>
+										</div>
+									</a>
+									<img src="images/apps/event.jpg" alt="" style="width:400px;height:300px;border-radius:40px;padding:20px;opacity: 0.8;">
+								  </div>
+								  <div class="project web   apps">
+									<a  href="/apps/My_Color_Game/ColorGame.html"  target="_blank">
+										<div class="project-overlay">
+											<div class="vcenter">
+												<div class="centrize">
+													<h4>Colorful Tees</h4>
+													<p>Web / Apps</p>
+												</div>
+											</div>
+										</div>
+									</a>
+									<img src="images/apps/colorgame.jpg" alt="" style="width:400px;height:300px;border-radius:40px;padding:20px;opacity: 0.8;">
+								  </div>
+								  <div class="project apps web">
+									<a href="/apps/My_Patatap/PataTap.html"  target="_blank">
+										<div class="project-overlay">
+											<div class="vcenter">
+												<div class="centrize">
+													<h4>Patatap Clone</h4>
+													<p>Web / Apps</p>
+												</div>
+											</div>
+										</div>
+									</a>
+									<img src="images/apps/patatap.jpg" alt="" style="width:400px;height:300px;border-radius:40px;padding:20px;opacity: 0.8;">
+								  </div>
+								  <div class="project apps web">
+									<a href="/apps/My_TodoList/ToDoList.html"  target="_blank">
+										<div class="project-overlay">
+											<div class="vcenter">
+												<div class="centrize">
+													<h4>To Do List</h4>
+													<p>Web / Apps</p>
+												</div>
+											</div>
+										</div>
+									</a>
+									<img src="images/apps/todolist.jpg" alt="" style="width:400px;height:3px;border-radius:40px;padding:20px;opacity: 0.8;">
+								  </div>
+								<!--   <div class="project graphic video">
+									<a class="open-project" href="http://demo.lion-coders.com/hello/hello-dark/project-1.html">
+										<div class="project-overlay">
+											<div class="vcenter">
+												<div class="centrize">
+													<h4>Coffee Cups</h4>
+													<p>Graphic / Video</p>
+												</div>
+											</div>
+										</div>
+									</a>
+									<img src="images/portfolio/3.jpg" alt="">
+								  </div> -->
+								<!--   <div class="project graphic">
+									<a class="open-project" href="http://demo.lion-coders.com/hello/hello-dark/project-1.html">
+										<div class="project-overlay">
+											<div class="vcenter">
+												<div class="centrize">
+													<h4>Stationary Branding</h4>
+													<p>Web</p>
+												</div>
+											</div>
+										</div>
+									</a>
+									<img src="images/portfolio/4.jpg" alt="">
+								  </div> -->
+								<!--   <div class="project web video">
+									<a class="open-project" href="http://demo.lion-coders.com/hello/hello-dark/project-2.html">
+										<div class="project-overlay">
+											<div class="vcenter">
+												<div class="centrize">
+													<h4>Typewriter</h4>
+													<p>Graphic / Video</p>
+												</div>
+											</div>
+										</div>
+									</a>
+									<img src="images/portfolio/5.jpg" alt="">
+								  </div> -->
+								 <!--  <div class="project video web">
+									<a class="open-project" href="http://demo.lion-coders.com/hello/hello-dark/project-1.html">
+										<div class="project-overlay">
+											<div class="vcenter">
+												<div class="centrize">
+													<h4>An Ipad</h4>
+													<p>Video / Web</p>
+												</div>
+											</div>
+										</div>
+									</a>
+									<img src="images/portfolio/7.jpg" alt="">
+								  </div> -->
+							</div>
+						</div>
+					</div>
+
+					<div class="row text-center">
+						<div class="col-md-12">
+							<h4>Interested in working together?</h4>
+							<a class="btn lowercase" href="mailto:yiwei.liu@email.ucr.edu?subject=Interested In Working Together">yiwei.liu@email.ucr.edu</a><br/>
+						</div>
+					</div>
+				</div>
+
+			</section>
+		</div>
+
+		<div class="content-blocks blog hidex">
+
+			<section class="content">
+				<div class="block-content">
+					<h3 class="block-title">Fun Tech NEWS</h3>
+					<div class="col-md-10 col-md-offset-1">
+							<div class="post">
+								<div class="post-thumbnail">
+									<a class="open-post" href="http://www.businessinsider.com/state-of-startups-2017-according-to-over-850-founders-first-round-capital-2017-12">
+										<img src="images/image5.jpg" alt="">
+									</a>
+								</div>
+								<div class="post-title">
+									<a class="open-post" href="http://www.businessinsider.com/state-of-startups-2017-according-to-over-850-founders-first-round-capital-2017-12"><h2>What it was like to work at startups in 2017, according to over 850 founders surveyed by a top VC firm</h2></a>
+									<p class="post-info">
+										<span class="post-author">Posted by Zoë Bernard</span>
+										<span class="slash"></span>
+										<span class="post-date">Dec. 6, 2017</span>
+										<span class="slash"></span>
+										<span class="post-catetory">Social</span>
+									</p>
+								</div>
+								<div class="post-body">
+									<p>The tech bubble isn't going to burst anytime soon, at least according to the majority of venture-backed startup founders interviewed by the venture-capital firm First Round for its annual State of Startups Survey.</p>
+
+									<p>This year, the VC firm surveyed nearly 900 startup founders to provide insight into what the startup landscape is like in 2017. Its findings include predictions on how the industry will change, which positions are most difficult to hire for, and whether it's a good time to start a company.</p>
+									<a class="btn " href="http://www.businessinsider.com/state-of-startups-2017-according-to-over-850-founders-first-round-capital-2017-12" target="_blank">Read More</a>
+								</div>
+							</div>
+							<div class="post">
+								<div class="post-thumbnail">
+									<a class="open-post" href="https://techcrunch.com/2017/12/07/the-price-of-bitcoin-has-doubled-in-two-weeks-now-above-16k/">
+										<img src="images/image3.jpg" alt="">
+									</a>
+								</div>
+								<div class="post-title">
+									<a class="open-post" href="https://techcrunch.com/2017/12/07/the-price-of-bitcoin-has-doubled-in-two-weeks-now-above-16k/"><h2>The price of bitcoin has doubled in two weeks, now above $16K</h2></a>
+									<p class="post-info">
+										<span class="post-author">Posted by  Lucas Matney</span>
+										<span class="slash"></span>
+										<span class="post-date">Dec 07, 2017</span>
+										<span class="slash"></span>
+										<span class="post-catetory">Featured News</span>
+									</p>
+								</div>
+								<div class="post-body">
+									<p>The cryptocurrency’s gains Thursday morning hit new heights, striking well above $18,000 across widely varying exchanges, coming to rest above $16,000 while the popular Coinbase exchange had been suffering major issues due to “record high traffic.”</p>
+									<a class="btn" href="https://techcrunch.com/2017/12/07/the-price-of-bitcoin-has-doubled-in-two-weeks-now-above-16k/" target="_blank">Read More</a>
+								</div>
+							</div>
+							<div class="post">
+								<div class="post-thumbnail">
+									<a class="open-post" href="https://techcrunch.com/2017/12/07/china-jd-plug-and-play-startups/">
+										<img src="images/image4.jpg" alt="">
+									</a>
+								</div>
+								<div class="post-title">
+									<a class="open-post" href="https://techcrunch.com/2017/12/07/china-jd-plug-and-play-startups/"><h2>China’s JD partners with accelerator program Plug and Play to reach US startups</h2></a>
+									<p class="post-info">
+										<span class="post-author">Posted by Jon Russell</span>
+										<span class="slash"></span>
+										<span class="post-date">Dec 07, 2017</span>
+										<span class="slash"></span>
+										<span class="post-catetory">International</span>
+									</p>
+								</div>
+								<div class="post-body">
+									<p>E-commerce giant JD.com, the closest rival to Alibaba in China, is broadening its presence in Silicon Valley after it announced a collaboration with accelerator firm Plug and Play to seek out and work with promising U.S. startups. </p>
+									<a class="btn" href="https://techcrunch.com/2017/12/07/china-jd-plug-and-play-startups/" target="_blank">Read More</a>
+								</div>
+							</div>
+							<div class="post">
+								<div class="post-thumbnail">
+									<a class="open-post" href="http://http://www.businessinsider.com/google-and-facebook-dominate-the-world-of-online-advertising-charts-2017-12">
+										<img src="images/image6.jpg" alt="">
+									</a>
+								</div>
+								<div class="post-title">
+									<a class="open-post" href="http://http://www.businessinsider.com/google-and-facebook-dominate-the-world-of-online-advertising-charts-2017-12"><h2>Google and Facebook dominate digital advertising — and they now account for 25% of all ad sales, online or off</h2></a>
+									<p class="post-info">
+										<span class="post-author">Posted by Caroline Cakebread</span>
+										<span class="slash"></span>
+										<span class="post-date">Dec 07, 2017</span>
+										<span class="slash"></span>
+										<span class="post-catetory">Business</span>
+									</p>
+								</div>
+								<div class="post-body">
+									<p>The world of advertising à la Mad Men is no more. Consumers' eyes are drifting from newspapers and televisions to computers and smartphones, and the world's global advertising dollars are following them. But the overwhelming beneficiaries of this monumental shift are Google and Facebook. </p>
+									<a class="btn" href="http://http://www.businessinsider.com/google-and-facebook-dominate-the-world-of-online-advertising-charts-2017-12" target="_blank">Read More</a>
+								</div>
+							</div>
+
+						<div class="text-center">
+							<ul class="pagination">
+								<li>
+								  <a href="index.html#" aria-label="Previous">
+									<span aria-hidden="true">&laquo;</span>
+								  </a>
+								</li>
+								<li class="active"><a href="index.html#">1</a></li>
+								<li><a href="index.html#">2</a></li>
+								<li><a href="index.html#">3</a></li>
+								<li><a href="index.html#">4</a></li>
+								<li><a href="index.html#">5</a></li>
+								<li>
+								  <a href="index.html#" aria-label="Next">
+									<span aria-hidden="true">&raquo;</span>
+								  </a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div class="content-blocks contact hidex">
+
+			<section class="content">
+				<div class="block-content">
+					<h3 class="block-title">Get in touch</h3>
+					<div class="row">
+
+						<div class="col-md-6">
+							<div class="contact-content ">
+								<div class="contact-icon">
+									<i class="fa fa-map-marker"></i>
+								</div>
+								<div class="contact-details">
+									<h5>Address</h5>
+									<p>Riverside, CA, 92507</p>
+								</div>
+							</div>
+							<div class="contact-content ">
+								<div class="contact-icon">
+									<i class="fa fa-phone"></i>
+								</div>
+								<div class="contact-details">
+									<h5>Contact Me</h5>
+									<p> +1-951-488-8066</p>
+								</div>
+							</div>
+							<div class="contact-content ">
+								<div class="contact-icon">
+									<i class="fa fa-envelope"></i>
+								</div>
+								<div class="contact-details">
+									<h5>Enquiries</h5>
+									<p>yiwei.liu@email.ucr.edu</p>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-md-6">
+								<form method="POST" action="http://demo.lion-coders.com/hello/hello-dark/php/contact_me.php" id="formcontactus" class="" >
+								  <div class="form-group">
+									<input name="name" type="text" class="form-control requiretop" placeholder="* Your Name" />
+								  </div>
+								  <div class="form-group">
+									<input name="email" type="email" class="form-control requiretop" placeholder="* Your Email" />
+								  </div>
+								  <div class="form-group">
+									<textarea rows="6" name="message" class="form-control requiretop" placeholder="* Your Message"></textarea>
+								  </div>
+								  <div class="form-group">
+									<button type="submit" class="btn btn-dark selected">Send Message</button>
+								  </div>
+								</form>
+						</div>
+					</div>
+
+				</div>
+			</section>
+		</div>
+
+
+
+	</div>
+</section>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="static/js/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="static/js/jquery.placeholder.min.js"></script>
+<script type="text/javascript" src="static/js/contact_me.js"></script>
+<script type="text/javascript" src="static/js/smooth-scroll.js"></script>
+<script type="text/javascript" src="static/js/main.js"></script>
+ </body>
 </html>
