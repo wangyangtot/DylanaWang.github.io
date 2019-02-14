@@ -1,708 +1,804 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110963260-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110963260-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-	  gtag('config', 'UA-110963260-1');
-	</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
 
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+        gtag('js', new Date());
 
-	<title>Welcome to Chloe's Site</title>
-	<meta name="description" content="" />
-	<meta name="author" content="" />
-	<link rel="icon" href="http://demo.lion-coders.com/hello/hello-dark/images/favicon.ico"/>
-	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans|Audiowide|Berkshire+Swash|Cabin+Sketch|Raleway:400,700' rel='stylesheet' type='text/css'/>
-	<link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css" media="screen"/>
-	<link rel="stylesheet" href="static/css/font-awesome.min.css" type="text/css" media="screen"/>
-	<link rel="stylesheet" href="static/css/animate.css" type="text/css" media="screen"/>
-	<link rel="stylesheet" href="static/css/style.css" type="text/css" media="screen"/>
+        gtag('config', 'UA-110963260-1');
+    </script>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>Welcome to Chloe's Site</title>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <link rel="icon" href="http://demo.lion-coders.com/hello/hello-dark/images/favicon.ico"/>
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans|Audiowide|Berkshire+Swash|Cabin+Sketch|Raleway:400,700'
+          rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="static/css/font-awesome.min.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="static/css/animate.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="static/css/style.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/components/icon.css">
 
 </head>
 <body>
 
-	<!-- <embed src="music/Sade_By_Your_Side.mp3" autostart="true" loop="true" height="0" width="0" margin = "0" padding = "0">   -->
-	<div class="music">
-		<embed src="music/Sade_By_Your_Side.mp3" autostart="true" loop="true">
-	</div>
-	<!-- <a src="https://open.spotify.com/user/spotify/playlist/37i9dQZF1DXc8kgYqQLMfH"></a> -->
-	<div class="preloader">
-			<div class="spinner"><strong>Loading...<i class="fa-li fa fa-spinner fa-spin"></i></strong></div>
-	</div>
-	<div class="preloader-left"></div>
-	<div class="preloader-right"></div>
+<!-- <embed src="music/Sade_By_Your_Side.mp3" autostart="true" loop="true" height="0" width="0" margin = "0" padding = "0">   -->
+<div id="music">
+    <audio controls autoplay="autoplay" style="width:200px;height:50px">
+        <source src="https://s3-us-west-1.amazonaws.com/emotionalarcmovie/static/video/backgroud.mp3"
+                type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</div>
+<!-- <a src="https://open.spotify.com/user/spotify/playlist/37i9dQZF1DXc8kgYqQLMfH"></a> -->
+<div class="preloader">
+    <div class="spinner"><strong>Loading...<i class="fa-li fa fa-spinner fa-spin"></i></strong></div>
+</div>
+<div class="preloader-left"></div>
+<div class="preloader-right"></div>
 
-	<div class="inline-menu-container hidex">
+<div class="inline-menu-container hidex">
 
-		<ul class="inline-menu">
-			<li class="about menu-item">Resume</li>
-			<li class="portfolio menu-item">Portfolio</li>
-			<li class="blog menu-item">Fun Tech News</li>
-			<li class="contact menu-item">Contact</li>
-			<li id="close">&times;</li>
-		</ul>
+    <ul class="inline-menu">
+        <li class="about menu-item">Resume</li>
+        <li class="portfolio menu-item">Portfolio</li>
+        <li class="blog menu-item">Fun Tech News</li>
+        <li class="contact menu-item">Contact</li>
+        <li id="close">&times;</li>
+    </ul>
 
-	</div>
+</div>
 
 <section class="home">
-            <div class="container">
-		<div class="name-block">
-			<div class="name-block-container">
-				<h1><span>Hi, I'm</span>Yiwei (Chloe) Liu</h1>
-                                                <h2>Software Developer</h2>
-				<a class="btn btn-download" href="/YiweiLiu_Resume.pdf" download="Yiwei_Liu_Resume" >Download Resume</a>
-				<a class = "btn btn-online" href="https://drive.google.com/file/d/1JpzRRl5kY8ZSrI8xAf0HlESrGT9PmN5M/view?usp=sharing"  target="_blank">View Resume Online</a>
-				<div class="social">
-					<ul >
-						<li><a href="https://www.linkedin.com/in/yiwei-chloe-liu-9529006b/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="https://www.facebook.com/chloe.liu.9047" target="_blank"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="https://github.com/chloeliu123" target="_blank"><i class="fa fa-github"></i></a></li>
-					</ul>
-				</div>
-			</div>
+    <div class="container">
+        <div class="name-block">
+            <div class="name-block-container">
+                <h1><span>Hi, I'm</span>Dylana (Yangyang) Wang</h1>
+                <h2>Data Scientist</h2>
+                <a class="btn btn-download" href="DylanaWang_DataScientist.pdf" download="DylanaWang_DataScientist">Download Resume</a>
+                <a class="btn btn-online"
+                   href="DylanaWang_DataScientist.pdf"
+                   target="_blank">View Resume Online</a>
+                <div class="social">
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/dylana-wang-971982163/" target="_blank"><i
+                                class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://www.facebook.com/wangyangtot" target="_blank"><i
+                                class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://github.com/wangyangtot" target="_blank"><i class="black github icon large"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-		</div>
-		<div class="menu-blocks">
-			<div class="about-block">
-				<div class="about-block-container">
-					<h2 class="about menu-item">Resume</h2>
-				</div>
-			</div>
-			<div class="portfolio-block">
-				<div class="portfolio-block-container">
-					<h2 class="portfolio menu-item">Portfolio</h2>
-				</div>
-			</div>
-			<div class="blog-block">
-				<div class="blog-block-container">
-					<h2 class="blog menu-item">Fun Tech News</h2>
-				</div>
-			</div>
-			<div class="contact-block">
-				<div class="contact-block-container">
-					<h2 class="contact menu-item">Contact</h2>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="content-blocks about hidex">
-
-			<section class="content" id="about">
-
-				<div class="block-content">
-					<h3 class="block-title">Profile</h3>
-					<div class="row">
-						<div class="col-md-7">
-							<p> &nbsp &nbsp &nbsp &nbsp I am a Ph.D. candidate in Economics, and I just got Master of Science in Applied Mathematics from UCR this summer (2017). I also have done multiple web development and mobile development projects.</p>
-							<p>  &nbsp &nbsp&nbsp &nbsp My education background has provided me a variety of technical skills and people skills which allow me to relate to all levels of management and work successfully with a diversity of personalities. </p>
-							<p>  &nbsp &nbsp&nbsp &nbsp I also enjoy being challenged and working on projects that require me to work outside my comfort zone and knowledge set, as continuing to learn new languages and development techniques are important to me and the success of any organization.</p>
-							<img class="sign" src="images/signature.png" alt="" />
-						</div>
-						<div class="col-md-5">
-							<ul class="info-list">
-								<li><strong>Name : </strong> Yiwei (Chloe) Liu</li>
-								<!-- <li><strong>Date of birth : </strong>   July, 1990 </li> -->
-								<li><strong>Address : </strong> Riverside, CA</li>
-								<li><strong>Email : </strong> yiwei.liu@email.ucr.edu</li>
-								<li><strong>Phone : </strong> +1-951-488-8066</li>
-								<!-- <li><strong>Skype : </strong>  James.Bond</li> -->
-								<li><strong>Interest : </strong> Full Time Software Engineer (Entry Level)</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<div class="block-content ">
-					<h3 class="block-title">Skills</h3>
-					<div class="row">
-						<div class="col-sm-6">
-							<h4>Technical Skills</h4>
-							<label class="progress-bar-label"> Java  - <span>Advanced</label>
-							<div class="progress">
-								<div style="width: 85%;" class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-									<span> 85%</span>
-								</div>
-							</div>
-							<label class="progress-bar-label">HTML&amp;CSS - <span>Intermediate</span></label>
-							<div class="progress">
-								<div style="width: 70%;" class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100">
-									<span>70%</span>
-								</div>
-							</div>
-							<label class="progress-bar-label">Javascript - <span>Intermediate</span></label>
-							<div class="progress">
-								<div style="width: 67%;" class="progress-bar" role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100">
-									<span>60%</span>
-								</div>
-							</div>
-							<label class="progress-bar-label"> R  - <span>Intermediate</label>
-							<div class="progress">
-								<div style="width: 70%;" class="progress-bar" role="progressbar" aria-valuenow="69" aria-valuemin="0" aria-valuemax="100">
-									<span>70%</span>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6">
-							<h4>Know-how</h4>
-							<div class="row">
-								<div class="col-sm-6">
-									<ul class="icon-list">
-										<li>Web Development</li>
-										<li>Object-Oriented Design</li>
-										<li>Distributed System Design</li>
-										<li>Relational Database (e.g. MySQL)</li>
-										<li>NoSQL Database (e.g. MongoDB)</li>
-										<li>AWS</li>
-									</ul>
-								</div>
-								<div class="col-sm-6">
-									<ul class="icon-list">
-										<li>Data Structure and Algorithm</li>
-										<li>Restful API Implementation</li>
-										<li>Bootstrap</li>
-										<li>DOM Manipulation</li>
-										<li>JQuery</li>
-										<li>Big Table</li>
-										<li>Big Query</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="block-content ">
-					<h3 class="block-title">Projects</h3>
-					<div class="timeline experience">
-
-						<div class="row ">
-							<div class="col-md-12">
-								<div class="exp-holder">
-									<div class="exp">
-										<div class="hgroup">
-											<h4>  Event+: </h4>
-											<h5>Java Web Service Development - Event Search and Recommendation Engine</h5>
-										</div>
-										<ul>
-											<li>-Developed a <strong>dynamic web page</strong> for users to search events and update preference;</li>
-											<li>-Improved<strong> personalized event recommendation</strong> based on search history and favorite records;</li>
-											<li>-Implemented <strong>RESTful APIs</strong> in Java using servlets to handle HTTP requests and responses;</li>
-											<li>-Built databases (both relational<strong> (MySQL) </strong>and<strong> NoSQL (MongoDB)) </strong>to fetch event data from TicketMaster API (This was also tested with Yelp API);</li>
-											<li>-Deployed server side to<strong> Amazon EC2 </strong>to handle 150 QPS tested by<strong> Apache JMeter</strong>;</li>
-											<li>Designed an interactive web page utilizing<strong> AJAX technology </strong>(HTML, CSS and JavaScript);</li>
-											<li>-Used<strong> ELK </strong>for user behavior analysis.</li>
-										</ul>
-										</div>
-
-									<div class="exp">
-										<div class="hgroup">
-											<h4>GoPlaces:</h4>
-											<h5>LBS based Android App</h5>
-										</div>
-										<ul>
-											<li>-Developed an <strong>Android App</strong> to post and search for events based on keywords;</li>
-											<li>-Integrated <strong>Google Map API</strong> to display and navigate to nearby events;</li>
-											<li>-Utilized <strong>Google Firebase</strong> to store and manage UGC data (comments, image, event descriptions, etc);</li>
-											<li>-Used in-app advertising <strong>Google AdMob</strong> to display ads from Google advertises in real time.</li>
-										</ul>
-									</div>
-
-									<div class="exp">
-										<div class="hgroup">
-											<h4>iGoPlaces:</h4>
-											<h5>Geo-index Based Social Network - iOS APP</h5>
-										</div>
-										<ul>
-											<li>-Developed a forum-like <strong>iOS App</strong> to post threads;</li>
-											<li>-Built a scalable web service with <strong>Golang</strong> to handle POST requests and deployed to Google Cloud (<strong>GAE Flex</strong>) for automatic scaling;</li>
-											<li>Created <strong>BigTable</strong> in Google Cloud for persistent storage of user information and posts;</li>
-											<li>Used <strong>Google Data-flow</strong> to dump daily user data from BigTable to <strong>BigQuery</strong> table for better performance of off-line analysis;</li>
-											<li>Aggregated the data in <strong>BigQuery</strong> at post level and user level for spam detection.</li>
-										</ul>
-									</div>
-
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-
-				<div class="block-content">
-					<h3 class="block-title">Education</h3>
-					<div class="timeline education">
-						<div class="row ">
-							<div class="col-md-12">
-								<div class="exp-holder">
-									<div class="exp edu">
-										<div class="hgroup">
-											<h4>Ph.D. in Economics - UCR </h4>
-											<h5>Sept 2012 - <span class="current">Current (on hold, in progress)</span> ;   GPA: 3.8;</h5>
-										</div>
-									</div>
-									<div class="exp edu">
-										<div class="hgroup">
-											<h4>Master of Science in Applied Mathematics - UCR </h4>
-											<h5>Sept 2014 - July 2017;   GPA : 3.7;</h5>
-										</div>
-									</div>
-									<div class="exp edu">
-										<div class="hgroup">
-											<h4>Master of Art in Economics - UCR</h4>
-											<h5>Sept 2012 - July 2014;   GPA : 3.8;</h5>
-										</div>
-									</div>
-									<div class="exp edu">
-										<div class="hgroup">
-											<h4>Bachelor of Science in Economics - Huazhong University of Science and Technology</h4>
-											<h5>Sept 2008 - July 2012;   GPA : 3.7;</h5>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					 </div>
-				</div>
-<!--
-				<div class="block-content">
-					<h3 class="block-title">Services</h3>
-					<div class="row">
-						<div class="col-sm-4 service">
-							<div class="service-icon">
-								<i class=" fa fa-pencil"></i>
-							</div>
-							<h4>Web Design</h4>
-							<p>Ne cum invidunt constituto, sanctus accusam an usu, ea mandamus incorrupte mel. Pro cu purto graeco. Wisi sonet elitr eos in. </p>
-						</div>
-						<div class="col-sm-4 service">
-							<div class="service-icon">
-								<i class=" fa fa-building"></i>
-							</div>
-							<h4>App Development</h4>
-							<p>Ne cum invidunt constituto, sanctus accusam an usu, ea mandamus incorrupte mel. Pro cu purto graeco. Wisi sonet elitr eos in. </p>
-						</div>
-						<div class="col-sm-4 service">
-							<div class="service-icon">
-								<i class=" fa fa-image"></i>
-							</div>
-							<h4>Graphic Design</h4>
-							<p>Ne cum invidunt constituto, sanctus accusam an usu, ea mandamus incorrupte mel. Pro cu purto graeco. Wisi sonet elitr eos in. </p>
-						</div>
-						<div class="col-sm-4 service">
-							<div class="service-icon">
-								<i class=" fa fa-print"></i>
-							</div>
-							<h4>Print Design</h4>
-							<p>Ne cum invidunt constituto, sanctus accusam an usu, ea mandamus incorrupte mel. Pro cu purto graeco. Wisi sonet elitr eos in. </p>
-						</div>
-						<div class="col-sm-4 service">
-							<div class="service-icon">
-								<i class=" fa fa-image"></i>
-							</div>
-							<h4>Graphic Design</h4>
-							<p>Ne cum invidunt constituto, sanctus accusam an usu, ea mandamus incorrupte mel. Pro cu purto graeco. Wisi sonet elitr eos in. </p>
-						</div>
-						<div class="col-sm-4 service">
-							<div class="service-icon">
-								<i class=" fa fa-print"></i>
-							</div>
-							<h4>Print Design</h4>
-							<p>Ne cum invidunt constituto, sanctus accusam an usu, ea mandamus incorrupte mel. Pro cu purto graeco. Wisi sonet elitr eos in. </p>
-						</div>
-					</div>
-				</div>  -->
-
-				<div class="block-content">
-					<h3 class="block-title">Certifications</h3>
-					<div class="row">
-						<div class="col-md-12">
-							<div class="col-sm-4 awards">
-								<img src="images/image1.jpg" alt="" /> SAS Base Programmer Certification
-							</div>
-							<div class="col-sm-4 awards">
-								<img src="images/image1.jpg" alt="" /> SAS Advanced Programmer Certification
-							</div>
-							<div class="col-sm-4 awards">
-								<img src="images/image2.jpg" alt="" /> SOA Exam P
-							</div>
-						</div>
-					</div>
-				</div>
-
-			<!-- 	<div class="block-content">
-					<h3 class="block-title">Testimonials</h3>
-					<div class="row">
-						<div class="col-md-12">
-							<ul class="testimonials">
-								<li>
-									<img src="images/testimonials/1.jpg" alt="">
-									<blockquote>This template is exactly what we were looking for!<p class="quote"><span>Brendon Rodgers</span> - CEO of xyz.com</p></blockquote>
-
-								</li>
-								<li>
-									<img src="images/testimonials/2.jpg" alt="">
-									<blockquote>This template is very nice! Great work<p class="quote"><span>Becky Allwood</span> - CEO of abc.com</p></blockquote>
-
-								</li>
-								<li>
-									<img src="images/testimonials/3.jpg" alt="">
-									<blockquote>My work has been significantly simplified.<p class="quote"><span>Elly Page</span> - CEO of nfl.com</p></blockquote>
-
-								</li>
-							</ul>
-						  </div>
-					</div> -->
-
-					<div class="row text-center">
-						<div class="col-md-12 btn-email">
-							<a class="btn lowercase" href="mailto:yiwei.liu@email.ucr.edu?subject=Website Feedback">yiwei.liu@email.ucr.edu</a><br/>
-							<small>I am available for freelance</small>
-						</div>
-					</div>
-				</div>
+        </div>
+        <div class="menu-blocks">
+            <div class="about-block">
+                <div class="about-block-container">
+                    <h2 class="about menu-item">Resume</h2>
+                </div>
+            </div>
+            <div class="portfolio-block">
+                <div class="portfolio-block-container">
+                    <h2 class="portfolio menu-item">Portfolio</h2>
+                </div>
+            </div>
+            <div class="blog-block">
+                <div class="blog-block-container">
+                    <h2 class="blog menu-item">Fun Tech News</h2>
+                </div>
+            </div>
+            <div class="contact-block">
+                <div class="contact-block-container">
+                    <h2 class="contact menu-item">Contact</h2>
+                </div>
+            </div>
+        </div>
 
 
-			</section>
-		</div>
+        <div class="content-blocks about hidex">
 
-		<div class="content-blocks portfolio hidex">
+            <section class="content" id="about">
 
-			<section class="content">
+                <div class="block-content">
+                    <h3 class="block-title">Profile</h3>
+                    <div class="row">
+                        <div class="col-md-7">
+                            <p> &nbsp &nbsp &nbsp &nbsp I am a Ph.D. candidate in Economics, and I just got Master of
+                                Science in Applied Mathematics from UCR this summer (2017). I also have done multiple
+                                web development and mobile development projects.</p>
+                            <p> &nbsp &nbsp&nbsp &nbsp My education background has provided me a variety of technical
+                                skills and people skills which allow me to relate to all levels of management and work
+                                successfully with a diversity of personalities. </p>
+                            <p> &nbsp &nbsp&nbsp &nbsp I also enjoy being challenged and working on projects that
+                                require me to work outside my comfort zone and knowledge set, as continuing to learn new
+                                languages and development techniques are important to me and the success of any
+                                organization.</p>
+                            <img class="sign" src="images/signature.png" alt=""/>
+                        </div>
+                        <div class="col-md-5">
+                            <ul class="info-list">
+                                <li><strong>Name : </strong> Yiwei (Chloe) Liu</li>
+                                <!-- <li><strong>Date of birth : </strong>   July, 1990 </li> -->
+                                <li><strong>Address : </strong> Riverside, CA</li>
+                                <li><strong>Email : </strong> yiwei.liu@email.ucr.edu</li>
+                                <li><strong>Phone : </strong> +1-951-488-8066</li>
+                                <!-- <li><strong>Skype : </strong>  James.Bond</li> -->
+                                <li><strong>Interest : </strong> Full Time Software Engineer (Entry Level)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-				<div class="block-content">
-					<h3 class="block-title">Portfolio</h3>
-					<div class="row">
-						<div class="col-md-12">
-							<ul id="filters">
-							  <li class="active" data-filter="*">All</li>
-							  <li data-filter=".graphic">Graphic</li>
-							  <li data-filter=".web">Web</li>
-							  <li data-filter=".video">Video</li>
-							  <li data-filter=".apps">Apps</li>
-							</ul>
-							<div id="projects">
-								 <!--  <div class="project graphic apps">
-									<a class="open-project" href="http://demo.lion-coders.com/hello/hello-dark/project-1.html">
-										<div class="project-overlay">
-											<div class="vcenter">
-												<div class="centrize">
-													<h4>Luxury Watch</h4>
-													<p>Graphic / Apps</p>
-												</div>
-											</div>
-										</div>
-									</a>
-									<img src="images/portfolio/1.jpg" alt="">
-								  </div> -->
-								  <div class="project web   apps">
-									<a  href="http://54.149.172.207/Titan/#"  target="_blank">
-										<div class="project-overlay">
-											<div class="vcenter">
-												<div class="centrize">
-													<h4>Event Recommendation</h4>
-													<p>Web / Apps</p>
-												</div>
-											</div>
-										</div>
-									</a>
-									<img src="images/apps/event.jpg" alt="" style="width:400px;height:300px;border-radius:40px;padding:20px;opacity: 0.8;">
-								  </div>
-								  <div class="project web   apps">
-									<a  href="/apps/My_Color_Game/ColorGame.html"  target="_blank">
-										<div class="project-overlay">
-											<div class="vcenter">
-												<div class="centrize">
-													<h4>Colorful Tees</h4>
-													<p>Web / Apps</p>
-												</div>
-											</div>
-										</div>
-									</a>
-									<img src="images/apps/colorgame.jpg" alt="" style="width:400px;height:300px;border-radius:40px;padding:20px;opacity: 0.8;">
-								  </div>
-								  <div class="project apps web">
-									<a href="/apps/My_Patatap/PataTap.html"  target="_blank">
-										<div class="project-overlay">
-											<div class="vcenter">
-												<div class="centrize">
-													<h4>Patatap Clone</h4>
-													<p>Web / Apps</p>
-												</div>
-											</div>
-										</div>
-									</a>
-									<img src="images/apps/patatap.jpg" alt="" style="width:400px;height:300px;border-radius:40px;padding:20px;opacity: 0.8;">
-								  </div>
-								  <div class="project apps web">
-									<a href="/apps/My_TodoList/ToDoList.html"  target="_blank">
-										<div class="project-overlay">
-											<div class="vcenter">
-												<div class="centrize">
-													<h4>To Do List</h4>
-													<p>Web / Apps</p>
-												</div>
-											</div>
-										</div>
-									</a>
-									<img src="images/apps/todolist.jpg" alt="" style="width:400px;height:3px;border-radius:40px;padding:20px;opacity: 0.8;">
-								  </div>
-								<!--   <div class="project graphic video">
-									<a class="open-project" href="http://demo.lion-coders.com/hello/hello-dark/project-1.html">
-										<div class="project-overlay">
-											<div class="vcenter">
-												<div class="centrize">
-													<h4>Coffee Cups</h4>
-													<p>Graphic / Video</p>
-												</div>
-											</div>
-										</div>
-									</a>
-									<img src="images/portfolio/3.jpg" alt="">
-								  </div> -->
-								<!--   <div class="project graphic">
-									<a class="open-project" href="http://demo.lion-coders.com/hello/hello-dark/project-1.html">
-										<div class="project-overlay">
-											<div class="vcenter">
-												<div class="centrize">
-													<h4>Stationary Branding</h4>
-													<p>Web</p>
-												</div>
-											</div>
-										</div>
-									</a>
-									<img src="images/portfolio/4.jpg" alt="">
-								  </div> -->
-								<!--   <div class="project web video">
-									<a class="open-project" href="http://demo.lion-coders.com/hello/hello-dark/project-2.html">
-										<div class="project-overlay">
-											<div class="vcenter">
-												<div class="centrize">
-													<h4>Typewriter</h4>
-													<p>Graphic / Video</p>
-												</div>
-											</div>
-										</div>
-									</a>
-									<img src="images/portfolio/5.jpg" alt="">
-								  </div> -->
-								 <!--  <div class="project video web">
-									<a class="open-project" href="http://demo.lion-coders.com/hello/hello-dark/project-1.html">
-										<div class="project-overlay">
-											<div class="vcenter">
-												<div class="centrize">
-													<h4>An Ipad</h4>
-													<p>Video / Web</p>
-												</div>
-											</div>
-										</div>
-									</a>
-									<img src="images/portfolio/7.jpg" alt="">
-								  </div> -->
-							</div>
-						</div>
-					</div>
+                <div class="block-content ">
+                    <h3 class="block-title">Skills</h3>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h4>Technical Skills</h4>
+                            <label class="progress-bar-label"> Java - <span>Advanced</label>
+                            <div class="progress">
+                                <div style="width: 85%;" class="progress-bar" role="progressbar" aria-valuenow="85"
+                                     aria-valuemin="0" aria-valuemax="100">
+                                    <span> 85%</span>
+                                </div>
+                            </div>
+                            <label class="progress-bar-label">HTML&amp;CSS - <span>Intermediate</span></label>
+                            <div class="progress">
+                                <div style="width: 70%;" class="progress-bar" role="progressbar" aria-valuenow="99"
+                                     aria-valuemin="0" aria-valuemax="100">
+                                    <span>70%</span>
+                                </div>
+                            </div>
+                            <label class="progress-bar-label">Javascript - <span>Intermediate</span></label>
+                            <div class="progress">
+                                <div style="width: 67%;" class="progress-bar" role="progressbar" aria-valuenow="67"
+                                     aria-valuemin="0" aria-valuemax="100">
+                                    <span>60%</span>
+                                </div>
+                            </div>
+                            <label class="progress-bar-label"> R - <span>Intermediate</label>
+                            <div class="progress">
+                                <div style="width: 70%;" class="progress-bar" role="progressbar" aria-valuenow="69"
+                                     aria-valuemin="0" aria-valuemax="100">
+                                    <span>70%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <h4>Know-how</h4>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <ul class="icon-list">
+                                        <li>Web Development</li>
+                                        <li>Object-Oriented Design</li>
+                                        <li>Distributed System Design</li>
+                                        <li>Relational Database (e.g. MySQL)</li>
+                                        <li>NoSQL Database (e.g. MongoDB)</li>
+                                        <li>AWS</li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                    <ul class="icon-list">
+                                        <li>Data Structure and Algorithm</li>
+                                        <li>Restful API Implementation</li>
+                                        <li>Bootstrap</li>
+                                        <li>DOM Manipulation</li>
+                                        <li>JQuery</li>
+                                        <li>Big Table</li>
+                                        <li>Big Query</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-					<div class="row text-center">
-						<div class="col-md-12">
-							<h4>Interested in working together?</h4>
-							<a class="btn lowercase" href="mailto:yiwei.liu@email.ucr.edu?subject=Interested In Working Together">yiwei.liu@email.ucr.edu</a><br/>
-						</div>
-					</div>
-				</div>
+                <div class="block-content ">
+                    <h3 class="block-title">Projects</h3>
+                    <div class="timeline experience">
 
-			</section>
-		</div>
+                        <div class="row ">
+                            <div class="col-md-12">
+                                <div class="exp-holder">
+                                    <div class="exp">
+                                        <div class="hgroup">
+                                            <h4> Event+: </h4>
+                                            <h5>Java Web Service Development - Event Search and Recommendation
+                                                Engine</h5>
+                                        </div>
+                                        <ul>
+                                            <li>-Developed a <strong>dynamic web page</strong> for users to search
+                                                events and update preference;
+                                            </li>
+                                            <li>-Improved<strong> personalized event recommendation</strong> based on
+                                                search history and favorite records;
+                                            </li>
+                                            <li>-Implemented <strong>RESTful APIs</strong> in Java using servlets to
+                                                handle HTTP requests and responses;
+                                            </li>
+                                            <li>-Built databases (both relational<strong> (MySQL) </strong>and<strong>
+                                                NoSQL (MongoDB)) </strong>to fetch event data from TicketMaster API
+                                                (This was also tested with Yelp API);
+                                            </li>
+                                            <li>-Deployed server side to<strong> Amazon EC2 </strong>to handle 150 QPS
+                                                tested by<strong> Apache JMeter</strong>;
+                                            </li>
+                                            <li>Designed an interactive web page utilizing<strong> AJAX
+                                                technology </strong>(HTML, CSS and JavaScript);
+                                            </li>
+                                            <li>-Used<strong> ELK </strong>for user behavior analysis.</li>
+                                        </ul>
+                                    </div>
 
-		<div class="content-blocks blog hidex">
+                                    <div class="exp">
+                                        <div class="hgroup">
+                                            <h4>GoPlaces:</h4>
+                                            <h5>LBS based Android App</h5>
+                                        </div>
+                                        <ul>
+                                            <li>-Developed an <strong>Android App</strong> to post and search for events
+                                                based on keywords;
+                                            </li>
+                                            <li>-Integrated <strong>Google Map API</strong> to display and navigate to
+                                                nearby events;
+                                            </li>
+                                            <li>-Utilized <strong>Google Firebase</strong> to store and manage UGC data
+                                                (comments, image, event descriptions, etc);
+                                            </li>
+                                            <li>-Used in-app advertising <strong>Google AdMob</strong> to display ads
+                                                from Google advertises in real time.
+                                            </li>
+                                        </ul>
+                                    </div>
 
-			<section class="content">
-				<div class="block-content">
-					<h3 class="block-title">Fun Tech NEWS</h3>
-					<div class="col-md-10 col-md-offset-1">
-							<div class="post">
-								<div class="post-thumbnail">
-									<a class="open-post" href="http://www.businessinsider.com/state-of-startups-2017-according-to-over-850-founders-first-round-capital-2017-12">
-										<img src="images/image5.jpg" alt="">
-									</a>
-								</div>
-								<div class="post-title">
-									<a class="open-post" href="http://www.businessinsider.com/state-of-startups-2017-according-to-over-850-founders-first-round-capital-2017-12"><h2>What it was like to work at startups in 2017, according to over 850 founders surveyed by a top VC firm</h2></a>
-									<p class="post-info">
-										<span class="post-author">Posted by Zoë Bernard</span>
-										<span class="slash"></span>
-										<span class="post-date">Dec. 6, 2017</span>
-										<span class="slash"></span>
-										<span class="post-catetory">Social</span>
-									</p>
-								</div>
-								<div class="post-body">
-									<p>The tech bubble isn't going to burst anytime soon, at least according to the majority of venture-backed startup founders interviewed by the venture-capital firm First Round for its annual State of Startups Survey.</p>
+                                    <div class="exp">
+                                        <div class="hgroup">
+                                            <h4>iGoPlaces:</h4>
+                                            <h5>Geo-index Based Social Network - iOS APP</h5>
+                                        </div>
+                                        <ul>
+                                            <li>-Developed a forum-like <strong>iOS App</strong> to post threads;</li>
+                                            <li>-Built a scalable web service with <strong>Golang</strong> to handle
+                                                POST requests and deployed to Google Cloud (<strong>GAE Flex</strong>)
+                                                for automatic scaling;
+                                            </li>
+                                            <li>Created <strong>BigTable</strong> in Google Cloud for persistent storage
+                                                of user information and posts;
+                                            </li>
+                                            <li>Used <strong>Google Data-flow</strong> to dump daily user data from
+                                                BigTable to <strong>BigQuery</strong> table for better performance of
+                                                off-line analysis;
+                                            </li>
+                                            <li>Aggregated the data in <strong>BigQuery</strong> at post level and user
+                                                level for spam detection.
+                                            </li>
+                                        </ul>
+                                    </div>
 
-									<p>This year, the VC firm surveyed nearly 900 startup founders to provide insight into what the startup landscape is like in 2017. Its findings include predictions on how the industry will change, which positions are most difficult to hire for, and whether it's a good time to start a company.</p>
-									<a class="btn " href="http://www.businessinsider.com/state-of-startups-2017-according-to-over-850-founders-first-round-capital-2017-12" target="_blank">Read More</a>
-								</div>
-							</div>
-							<div class="post">
-								<div class="post-thumbnail">
-									<a class="open-post" href="https://techcrunch.com/2017/12/07/the-price-of-bitcoin-has-doubled-in-two-weeks-now-above-16k/">
-										<img src="images/image3.jpg" alt="">
-									</a>
-								</div>
-								<div class="post-title">
-									<a class="open-post" href="https://techcrunch.com/2017/12/07/the-price-of-bitcoin-has-doubled-in-two-weeks-now-above-16k/"><h2>The price of bitcoin has doubled in two weeks, now above $16K</h2></a>
-									<p class="post-info">
-										<span class="post-author">Posted by  Lucas Matney</span>
-										<span class="slash"></span>
-										<span class="post-date">Dec 07, 2017</span>
-										<span class="slash"></span>
-										<span class="post-catetory">Featured News</span>
-									</p>
-								</div>
-								<div class="post-body">
-									<p>The cryptocurrency’s gains Thursday morning hit new heights, striking well above $18,000 across widely varying exchanges, coming to rest above $16,000 while the popular Coinbase exchange had been suffering major issues due to “record high traffic.”</p>
-									<a class="btn" href="https://techcrunch.com/2017/12/07/the-price-of-bitcoin-has-doubled-in-two-weeks-now-above-16k/" target="_blank">Read More</a>
-								</div>
-							</div>
-							<div class="post">
-								<div class="post-thumbnail">
-									<a class="open-post" href="https://techcrunch.com/2017/12/07/china-jd-plug-and-play-startups/">
-										<img src="images/image4.jpg" alt="">
-									</a>
-								</div>
-								<div class="post-title">
-									<a class="open-post" href="https://techcrunch.com/2017/12/07/china-jd-plug-and-play-startups/"><h2>China’s JD partners with accelerator program Plug and Play to reach US startups</h2></a>
-									<p class="post-info">
-										<span class="post-author">Posted by Jon Russell</span>
-										<span class="slash"></span>
-										<span class="post-date">Dec 07, 2017</span>
-										<span class="slash"></span>
-										<span class="post-catetory">International</span>
-									</p>
-								</div>
-								<div class="post-body">
-									<p>E-commerce giant JD.com, the closest rival to Alibaba in China, is broadening its presence in Silicon Valley after it announced a collaboration with accelerator firm Plug and Play to seek out and work with promising U.S. startups. </p>
-									<a class="btn" href="https://techcrunch.com/2017/12/07/china-jd-plug-and-play-startups/" target="_blank">Read More</a>
-								</div>
-							</div>
-							<div class="post">
-								<div class="post-thumbnail">
-									<a class="open-post" href="http://http://www.businessinsider.com/google-and-facebook-dominate-the-world-of-online-advertising-charts-2017-12">
-										<img src="images/image6.jpg" alt="">
-									</a>
-								</div>
-								<div class="post-title">
-									<a class="open-post" href="http://http://www.businessinsider.com/google-and-facebook-dominate-the-world-of-online-advertising-charts-2017-12"><h2>Google and Facebook dominate digital advertising — and they now account for 25% of all ad sales, online or off</h2></a>
-									<p class="post-info">
-										<span class="post-author">Posted by Caroline Cakebread</span>
-										<span class="slash"></span>
-										<span class="post-date">Dec 07, 2017</span>
-										<span class="slash"></span>
-										<span class="post-catetory">Business</span>
-									</p>
-								</div>
-								<div class="post-body">
-									<p>The world of advertising à la Mad Men is no more. Consumers' eyes are drifting from newspapers and televisions to computers and smartphones, and the world's global advertising dollars are following them. But the overwhelming beneficiaries of this monumental shift are Google and Facebook. </p>
-									<a class="btn" href="http://http://www.businessinsider.com/google-and-facebook-dominate-the-world-of-online-advertising-charts-2017-12" target="_blank">Read More</a>
-								</div>
-							</div>
+                                </div>
+                            </div>
+                        </div>
 
-						<div class="text-center">
-							<ul class="pagination">
-								<li>
-								  <a href="index.html#" aria-label="Previous">
-									<span aria-hidden="true">&laquo;</span>
-								  </a>
-								</li>
-								<li class="active"><a href="index.html#">1</a></li>
-								<li><a href="index.html#">2</a></li>
-								<li><a href="index.html#">3</a></li>
-								<li><a href="index.html#">4</a></li>
-								<li><a href="index.html#">5</a></li>
-								<li>
-								  <a href="index.html#" aria-label="Next">
-									<span aria-hidden="true">&raquo;</span>
-								  </a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
-		</div>
+                    </div>
+                </div>
 
-		<div class="content-blocks contact hidex">
+                <div class="block-content">
+                    <h3 class="block-title">Education</h3>
+                    <div class="timeline education">
+                        <div class="row ">
+                            <div class="col-md-12">
+                                <div class="exp-holder">
+                                    <div class="exp edu">
+                                        <div class="hgroup">
+                                            <h4>Ph.D. in Economics - UCR </h4>
+                                            <h5>Sept 2012 - <span class="current">Current (on hold, in progress)</span>
+                                                ; GPA: 3.8;</h5>
+                                        </div>
+                                    </div>
+                                    <div class="exp edu">
+                                        <div class="hgroup">
+                                            <h4>Master of Science in Applied Mathematics - UCR </h4>
+                                            <h5>Sept 2014 - July 2017; GPA : 3.7;</h5>
+                                        </div>
+                                    </div>
+                                    <div class="exp edu">
+                                        <div class="hgroup">
+                                            <h4>Master of Art in Economics - UCR</h4>
+                                            <h5>Sept 2012 - July 2014; GPA : 3.8;</h5>
+                                        </div>
+                                    </div>
+                                    <div class="exp edu">
+                                        <div class="hgroup">
+                                            <h4>Bachelor of Science in Economics - Huazhong University of Science and
+                                                Technology</h4>
+                                            <h5>Sept 2008 - July 2012; GPA : 3.7;</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                                <div class="block-content">
+                                    <h3 class="block-title">Services</h3>
+                                    <div class="row">
+                                        <div class="col-sm-4 service">
+                                            <div class="service-icon">
+                                                <i class=" fa fa-pencil"></i>
+                                            </div>
+                                            <h4>Web Design</h4>
+                                            <p>Ne cum invidunt constituto, sanctus accusam an usu, ea mandamus incorrupte mel. Pro cu purto graeco. Wisi sonet elitr eos in. </p>
+                                        </div>
+                                        <div class="col-sm-4 service">
+                                            <div class="service-icon">
+                                                <i class=" fa fa-building"></i>
+                                            </div>
+                                            <h4>App Development</h4>
+                                            <p>Ne cum invidunt constituto, sanctus accusam an usu, ea mandamus incorrupte mel. Pro cu purto graeco. Wisi sonet elitr eos in. </p>
+                                        </div>
+                                        <div class="col-sm-4 service">
+                                            <div class="service-icon">
+                                                <i class=" fa fa-image"></i>
+                                            </div>
+                                            <h4>Graphic Design</h4>
+                                            <p>Ne cum invidunt constituto, sanctus accusam an usu, ea mandamus incorrupte mel. Pro cu purto graeco. Wisi sonet elitr eos in. </p>
+                                        </div>
+                                        <div class="col-sm-4 service">
+                                            <div class="service-icon">
+                                                <i class=" fa fa-print"></i>
+                                            </div>
+                                            <h4>Print Design</h4>
+                                            <p>Ne cum invidunt constituto, sanctus accusam an usu, ea mandamus incorrupte mel. Pro cu purto graeco. Wisi sonet elitr eos in. </p>
+                                        </div>
+                                        <div class="col-sm-4 service">
+                                            <div class="service-icon">
+                                                <i class=" fa fa-image"></i>
+                                            </div>
+                                            <h4>Graphic Design</h4>
+                                            <p>Ne cum invidunt constituto, sanctus accusam an usu, ea mandamus incorrupte mel. Pro cu purto graeco. Wisi sonet elitr eos in. </p>
+                                        </div>
+                                        <div class="col-sm-4 service">
+                                            <div class="service-icon">
+                                                <i class=" fa fa-print"></i>
+                                            </div>
+                                            <h4>Print Design</h4>
+                                            <p>Ne cum invidunt constituto, sanctus accusam an usu, ea mandamus incorrupte mel. Pro cu purto graeco. Wisi sonet elitr eos in. </p>
+                                        </div>
+                                    </div>
+                                </div>  -->
 
-			<section class="content">
-				<div class="block-content">
-					<h3 class="block-title">Get in touch</h3>
-					<div class="row">
+                <div class="block-content">
+                    <h3 class="block-title">Certifications</h3>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-sm-4 awards">
+                                <img src="images/image1.jpg" alt=""/> SAS Base Programmer Certification
+                            </div>
+                            <div class="col-sm-4 awards">
+                                <img src="images/image1.jpg" alt=""/> SAS Advanced Programmer Certification
+                            </div>
+                            <div class="col-sm-4 awards">
+                                <img src="images/image2.jpg" alt=""/> SOA Exam P
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-						<div class="col-md-6">
-							<div class="contact-content ">
-								<div class="contact-icon">
-									<i class="fa fa-map-marker"></i>
-								</div>
-								<div class="contact-details">
-									<h5>Address</h5>
-									<p>Riverside, CA, 92507</p>
-								</div>
-							</div>
-							<div class="contact-content ">
-								<div class="contact-icon">
-									<i class="fa fa-phone"></i>
-								</div>
-								<div class="contact-details">
-									<h5>Contact Me</h5>
-									<p> +1-951-488-8066</p>
-								</div>
-							</div>
-							<div class="contact-content ">
-								<div class="contact-icon">
-									<i class="fa fa-envelope"></i>
-								</div>
-								<div class="contact-details">
-									<h5>Enquiries</h5>
-									<p>yiwei.liu@email.ucr.edu</p>
-								</div>
-							</div>
+                <!-- 	<div class="block-content">
+                        <h3 class="block-title">Testimonials</h3>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul class="testimonials">
+                                    <li>
+                                        <img src="images/testimonials/1.jpg" alt="">
+                                        <blockquote>This template is exactly what we were looking for!<p class="quote"><span>Brendon Rodgers</span> - CEO of xyz.com</p></blockquote>
 
-						</div>
-						<div class="col-md-6">
-								<form method="POST" action="http://demo.lion-coders.com/hello/hello-dark/php/contact_me.php" id="formcontactus" class="" >
-								  <div class="form-group">
-									<input name="name" type="text" class="form-control requiretop" placeholder="* Your Name" />
-								  </div>
-								  <div class="form-group">
-									<input name="email" type="email" class="form-control requiretop" placeholder="* Your Email" />
-								  </div>
-								  <div class="form-group">
-									<textarea rows="6" name="message" class="form-control requiretop" placeholder="* Your Message"></textarea>
-								  </div>
-								  <div class="form-group">
-									<button type="submit" class="btn btn-dark selected">Send Message</button>
-								  </div>
-								</form>
-						</div>
-					</div>
+                                    </li>
+                                    <li>
+                                        <img src="images/testimonials/2.jpg" alt="">
+                                        <blockquote>This template is very nice! Great work<p class="quote"><span>Becky Allwood</span> - CEO of abc.com</p></blockquote>
 
-				</div>
-			</section>
-		</div>
+                                    </li>
+                                    <li>
+                                        <img src="images/testimonials/3.jpg" alt="">
+                                        <blockquote>My work has been significantly simplified.<p class="quote"><span>Elly Page</span> - CEO of nfl.com</p></blockquote>
+
+                                    </li>
+                                </ul>
+                              </div>
+                        </div> -->
+
+                <div class="row text-center">
+                    <div class="col-md-12 btn-email">
+                        <a class="btn lowercase" href="mailto:yiwei.liu@email.ucr.edu?subject=Website Feedback">yiwei.liu@email.ucr.edu</a><br/>
+                        <small>I am available for freelance</small>
+                    </div>
+                </div>
+        </div>
 
 
-
-	</div>
 </section>
+</div>
 
+<div class="content-blocks portfolio hidex">
+
+    <section class="content">
+
+        <div class="block-content">
+            <h3 class="block-title">Portfolio</h3>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul id="filters">
+                        <li class="active" data-filter="*">All</li>
+                        <li data-filter=".graphic">Graphic</li>
+                        <li data-filter=".web">Web</li>
+                        <li data-filter=".video">Video</li>
+                        <li data-filter=".apps">Apps</li>
+                    </ul>
+                    <div id="projects">
+                        <!--  <div class="project graphic apps">
+                           <a class="open-project" href="http://demo.lion-coders.com/hello/hello-dark/project-1.html">
+                               <div class="project-overlay">
+                                   <div class="vcenter">
+                                       <div class="centrize">
+                                           <h4>Luxury Watch</h4>
+                                           <p>Graphic / Apps</p>
+                                       </div>
+                                   </div>
+                               </div>
+                           </a>
+                           <img src="images/portfolio/1.jpg" alt="">
+                         </div> -->
+                        <div class="project web   apps">
+                            <a href="http://54.149.172.207/Titan/#" target="_blank">
+                                <div class="project-overlay">
+                                    <div class="vcenter">
+                                        <div class="centrize">
+                                            <h4>Event Recommendation</h4>
+                                            <p>Web / Apps</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <img src="images/apps/event.jpg" alt=""
+                                 style="width:400px;height:300px;border-radius:40px;padding:20px;opacity: 0.8;">
+                        </div>
+                        <div class="project web   apps">
+                            <a href="/apps/My_Color_Game/ColorGame.html" target="_blank">
+                                <div class="project-overlay">
+                                    <div class="vcenter">
+                                        <div class="centrize">
+                                            <h4>Colorful Tees</h4>
+                                            <p>Web / Apps</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <img src="images/apps/colorgame.jpg" alt=""
+                                 style="width:400px;height:300px;border-radius:40px;padding:20px;opacity: 0.8;">
+                        </div>
+                        <div class="project apps web">
+                            <a href="/apps/My_Patatap/PataTap.html" target="_blank">
+                                <div class="project-overlay">
+                                    <div class="vcenter">
+                                        <div class="centrize">
+                                            <h4>Patatap Clone</h4>
+                                            <p>Web / Apps</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <img src="images/apps/patatap.jpg" alt=""
+                                 style="width:400px;height:300px;border-radius:40px;padding:20px;opacity: 0.8;">
+                        </div>
+                        <div class="project apps web">
+                            <a href="/apps/My_TodoList/ToDoList.html" target="_blank">
+                                <div class="project-overlay">
+                                    <div class="vcenter">
+                                        <div class="centrize">
+                                            <h4>To Do List</h4>
+                                            <p>Web / Apps</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <img src="images/apps/todolist.jpg" alt=""
+                                 style="width:400px;height:3px;border-radius:40px;padding:20px;opacity: 0.8;">
+                        </div>
+                        <!--   <div class="project graphic video">
+                            <a class="open-project" href="http://demo.lion-coders.com/hello/hello-dark/project-1.html">
+                                <div class="project-overlay">
+                                    <div class="vcenter">
+                                        <div class="centrize">
+                                            <h4>Coffee Cups</h4>
+                                            <p>Graphic / Video</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <img src="images/portfolio/3.jpg" alt="">
+                          </div> -->
+                        <!--   <div class="project graphic">
+                            <a class="open-project" href="http://demo.lion-coders.com/hello/hello-dark/project-1.html">
+                                <div class="project-overlay">
+                                    <div class="vcenter">
+                                        <div class="centrize">
+                                            <h4>Stationary Branding</h4>
+                                            <p>Web</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <img src="images/portfolio/4.jpg" alt="">
+                          </div> -->
+                        <!--   <div class="project web video">
+                            <a class="open-project" href="http://demo.lion-coders.com/hello/hello-dark/project-2.html">
+                                <div class="project-overlay">
+                                    <div class="vcenter">
+                                        <div class="centrize">
+                                            <h4>Typewriter</h4>
+                                            <p>Graphic / Video</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <img src="images/portfolio/5.jpg" alt="">
+                          </div> -->
+                        <!--  <div class="project video web">
+                           <a class="open-project" href="http://demo.lion-coders.com/hello/hello-dark/project-1.html">
+                               <div class="project-overlay">
+                                   <div class="vcenter">
+                                       <div class="centrize">
+                                           <h4>An Ipad</h4>
+                                           <p>Video / Web</p>
+                                       </div>
+                                   </div>
+                               </div>
+                           </a>
+                           <img src="images/portfolio/7.jpg" alt="">
+                         </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h4>Interested in working together?</h4>
+                    <a class="btn lowercase"
+                       href="mailto:yiwei.liu@email.ucr.edu?subject=Interested In Working Together">yiwei.liu@email.ucr.edu</a><br/>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</div>
+
+<div class="content-blocks blog hidex">
+
+    <section class="content">
+        <div class="block-content">
+            <h3 class="block-title">Fun Tech NEWS</h3>
+            <div class="col-md-10 col-md-offset-1">
+                <div class="post">
+                    <div class="post-thumbnail">
+                        <a class="open-post"
+                           href="http://www.businessinsider.com/state-of-startups-2017-according-to-over-850-founders-first-round-capital-2017-12">
+                            <img src="images/image5.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="post-title">
+                        <a class="open-post"
+                           href="http://www.businessinsider.com/state-of-startups-2017-according-to-over-850-founders-first-round-capital-2017-12">
+                            <h2>What it was like to work at startups in 2017, according to over 850 founders surveyed by
+                                a top VC firm</h2></a>
+                        <p class="post-info">
+                            <span class="post-author">Posted by Zoë Bernard</span>
+                            <span class="slash"></span>
+                            <span class="post-date">Dec. 6, 2017</span>
+                            <span class="slash"></span>
+                            <span class="post-catetory">Social</span>
+                        </p>
+                    </div>
+                    <div class="post-body">
+                        <p>The tech bubble isn't going to burst anytime soon, at least according to the majority of
+                            venture-backed startup founders interviewed by the venture-capital firm First Round for its
+                            annual State of Startups Survey.</p>
+
+                        <p>This year, the VC firm surveyed nearly 900 startup founders to provide insight into what the
+                            startup landscape is like in 2017. Its findings include predictions on how the industry will
+                            change, which positions are most difficult to hire for, and whether it's a good time to
+                            start a company.</p>
+                        <a class="btn "
+                           href="http://www.businessinsider.com/state-of-startups-2017-according-to-over-850-founders-first-round-capital-2017-12"
+                           target="_blank">Read More</a>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-thumbnail">
+                        <a class="open-post"
+                           href="https://techcrunch.com/2017/12/07/the-price-of-bitcoin-has-doubled-in-two-weeks-now-above-16k/">
+                            <img src="images/image3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="post-title">
+                        <a class="open-post"
+                           href="https://techcrunch.com/2017/12/07/the-price-of-bitcoin-has-doubled-in-two-weeks-now-above-16k/">
+                            <h2>The price of bitcoin has doubled in two weeks, now above $16K</h2></a>
+                        <p class="post-info">
+                            <span class="post-author">Posted by  Lucas Matney</span>
+                            <span class="slash"></span>
+                            <span class="post-date">Dec 07, 2017</span>
+                            <span class="slash"></span>
+                            <span class="post-catetory">Featured News</span>
+                        </p>
+                    </div>
+                    <div class="post-body">
+                        <p>The cryptocurrency’s gains Thursday morning hit new heights, striking well above $18,000
+                            across widely varying exchanges, coming to rest above $16,000 while the popular Coinbase
+                            exchange had been suffering major issues due to “record high traffic.”</p>
+                        <a class="btn"
+                           href="https://techcrunch.com/2017/12/07/the-price-of-bitcoin-has-doubled-in-two-weeks-now-above-16k/"
+                           target="_blank">Read More</a>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-thumbnail">
+                        <a class="open-post" href="https://techcrunch.com/2017/12/07/china-jd-plug-and-play-startups/">
+                            <img src="images/image4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="post-title">
+                        <a class="open-post" href="https://techcrunch.com/2017/12/07/china-jd-plug-and-play-startups/">
+                            <h2>China’s JD partners with accelerator program Plug and Play to reach US startups</h2></a>
+                        <p class="post-info">
+                            <span class="post-author">Posted by Jon Russell</span>
+                            <span class="slash"></span>
+                            <span class="post-date">Dec 07, 2017</span>
+                            <span class="slash"></span>
+                            <span class="post-catetory">International</span>
+                        </p>
+                    </div>
+                    <div class="post-body">
+                        <p>E-commerce giant JD.com, the closest rival to Alibaba in China, is broadening its presence in
+                            Silicon Valley after it announced a collaboration with accelerator firm Plug and Play to
+                            seek out and work with promising U.S. startups. </p>
+                        <a class="btn" href="https://techcrunch.com/2017/12/07/china-jd-plug-and-play-startups/"
+                           target="_blank">Read More</a>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-thumbnail">
+                        <a class="open-post"
+                           href="http://http://www.businessinsider.com/google-and-facebook-dominate-the-world-of-online-advertising-charts-2017-12">
+                            <img src="images/image6.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="post-title">
+                        <a class="open-post"
+                           href="http://http://www.businessinsider.com/google-and-facebook-dominate-the-world-of-online-advertising-charts-2017-12">
+                            <h2>Google and Facebook dominate digital advertising — and they now account for 25% of all
+                                ad sales, online or off</h2></a>
+                        <p class="post-info">
+                            <span class="post-author">Posted by Caroline Cakebread</span>
+                            <span class="slash"></span>
+                            <span class="post-date">Dec 07, 2017</span>
+                            <span class="slash"></span>
+                            <span class="post-catetory">Business</span>
+                        </p>
+                    </div>
+                    <div class="post-body">
+                        <p>The world of advertising à la Mad Men is no more. Consumers' eyes are drifting from
+                            newspapers and televisions to computers and smartphones, and the world's global advertising
+                            dollars are following them. But the overwhelming beneficiaries of this monumental shift are
+                            Google and Facebook. </p>
+                        <a class="btn"
+                           href="http://http://www.businessinsider.com/google-and-facebook-dominate-the-world-of-online-advertising-charts-2017-12"
+                           target="_blank">Read More</a>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <ul class="pagination">
+                        <li>
+                            <a href="index.html#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="active"><a href="index.html#">1</a></li>
+                        <li><a href="index.html#">2</a></li>
+                        <li><a href="index.html#">3</a></li>
+                        <li><a href="index.html#">4</a></li>
+                        <li><a href="index.html#">5</a></li>
+                        <li>
+                            <a href="index.html#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="content-blocks contact hidex">
+
+    <section class="content">
+        <div class="block-content">
+            <h3 class="block-title">Get in touch</h3>
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div class="contact-content ">
+                        <div class="contact-icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h5>Address</h5>
+                            <p>Riverside, CA, 92507</p>
+                        </div>
+                    </div>
+                    <div class="contact-content ">
+                        <div class="contact-icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h5>Contact Me</h5>
+                            <p> +1-951-488-8066</p>
+                        </div>
+                    </div>
+                    <div class="contact-content ">
+                        <div class="contact-icon">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h5>Enquiries</h5>
+                            <p>yiwei.liu@email.ucr.edu</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <form method="POST" action="http://demo.lion-coders.com/hello/hello-dark/php/contact_me.php"
+                          id="formcontactus" class="">
+                        <div class="form-group">
+                            <input name="name" type="text" class="form-control requiretop" placeholder="* Your Name"/>
+                        </div>
+                        <div class="form-group">
+                            <input name="email" type="email" class="form-control requiretop"
+                                   placeholder="* Your Email"/>
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="6" name="message" class="form-control requiretop"
+                                      placeholder="* Your Message"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-dark selected">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>
+
+
+</div>
+</section>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -712,5 +808,5 @@
 <script type="text/javascript" src="static/js/contact_me.js"></script>
 <script type="text/javascript" src="static/js/smooth-scroll.js"></script>
 <script type="text/javascript" src="static/js/main.js"></script>
- </body>
+</body>
 </html>
