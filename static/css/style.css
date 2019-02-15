@@ -465,7 +465,7 @@ h2.menu-item:hover:after {
 
 .social {
     position: absolute;
-    bottom: 30%;
+    bottom: 10%;
 }
 
 .social li {
@@ -478,12 +478,12 @@ h2.menu-item:hover:after {
     border: 2px solid #FFF;
     color: #FFF;
     display: inline-block;
-    height: 55px;
-    width: 55px;
+    height: 35px;
+    width: 35px;
 }
 
 .social li i {
-    line-height: 55px;
+    line-height: 35px;
     font-size: 12px;
 }
 
