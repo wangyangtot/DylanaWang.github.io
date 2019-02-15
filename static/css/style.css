@@ -478,12 +478,12 @@ h2.menu-item:hover:after {
     border: 2px solid #FFF;
     color: #FFF;
     display: inline-block;
-    height: 45px;
-    width: 45px;
+    height: 35px;
+    width: 35px;
 }
 
 .social li i {
-    line-height: 45px;
+    line-height: 35px;
     font-size: 12px;
 }
 
