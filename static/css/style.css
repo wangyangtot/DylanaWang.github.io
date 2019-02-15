@@ -478,8 +478,8 @@ h2.menu-item:hover:after {
     border: 2px solid #FFF;
     color: #FFF;
     display: inline-block;
-    height: 45px;
-    width: 45px;
+    height: 40px;
+    width: 40px;
 }
 
 .social li i {
